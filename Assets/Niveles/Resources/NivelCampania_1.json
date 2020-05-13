@@ -1,0 +1,86 @@
+{
+    "fondo": "fondo_desierto",
+    "velocidadFondo": 0.5,
+    "duracionTiempo": 30.0,
+    "musica": "bensound-happyrock",
+    "porcentajePuntosMediaEstrella": 50,
+    "porcentajePuntosEstrella": 100,
+    "enemigosNivel": [
+      {
+        "identificadorEnemigo": "PajaroHuevo",
+        "tiempoAparecer": 2.0,
+        "inicioAleatorio": false,
+        "reaparecer": false,
+        "posicionAparecer": {
+          "x": 2.0,
+          "y": 0.0
+        },
+        "lugarAparecer": 1,
+        "dificultadEnemigo": 1,
+        "velocidad": 10.0,
+        "saludEnemigo": 100.0
+      },
+      {
+        "identificadorEnemigo": "PajaroHuevo",
+        "tiempoAparecer": 3.0,
+        "inicioAleatorio": false,
+        "reaparecer": false,
+        "posicionAparecer": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "lugarAparecer": 1,
+        "dificultadEnemigo": 1,
+        "velocidad": 10.0,
+        "saludEnemigo": 100.0
+      },
+      {
+        "identificadorEnemigo": "PajaroHuevo",
+        "tiempoAparecer": 5.0,
+        "inicioAleatorio": false,
+        "reaparecer": false,
+        "posicionAparecer": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "lugarAparecer": 0,
+        "dificultadEnemigo": 1,
+        "velocidad": 10.0,
+        "saludEnemigo": 100.0
+      },
+      {
+        "identificadorEnemigo": "PajaroHuevo",
+        "tiempoAparecer": 7.0,
+        "inicioAleatorio": false,
+        "reaparecer": false,
+        "posicionAparecer": {
+          "x": 2.0,
+          "y": -2.0
+        },
+        "lugarAparecer": 1,
+        "dificultadEnemigo": 1,
+        "velocidad": 10.0,
+        "saludEnemigo": 100.0
+      },
+      {
+        "identificadorEnemigo": "PajaroHuevo",
+        "tiempoAparecer": 9.0
+      },
+      {
+        "identificadorEnemigo": "PajaroHuevo",
+        "tiempoAparecer": 11.0
+      },
+      {
+        "identificadorEnemigo": "PajaroHuevo",
+        "tiempoAparecer": 13.0
+      },
+      {
+        "identificadorEnemigo": "PajaroHuevo",
+        "tiempoAparecer": 13.0
+      },
+      {
+        "identificadorEnemigo": "PajaroHuevo",
+        "tiempoAparecer": 13.0
+      }
+    ]
+}

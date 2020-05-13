@@ -1,0 +1,5633 @@
+{
+    "fondo": "Sky_Background_1",
+    "velocidadFondo": 5.0,
+    "duracionTiempo": 60.0,
+    "musica": "bensound-jazzyfrenchy",
+    "enemigosNivel": [
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 2.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 0.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 3.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 2.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+      {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 5.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+			  "x": 4.0,
+			  "y": 2.0
+			},
+			"lugarAparecer": 0,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+      },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 7.0,
+			"inicioAleatorio": false,
+			"reaparecer": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			},
+			"lugarAparecer": 1,
+			"dificultadEnemigo": 1,
+			"velocidad": 10.0,
+			"saludEnemigo": 100.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 9.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 11.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 13.0
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 6.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 2.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": 0.0
+			}
+	  },
+		  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -2.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -4.0
+			}
+	  },
+	  {
+			"identificadorEnemigo": "PajaroHuevo",
+			"tiempoAparecer": 16.0,
+			"inicioAleatorio": false,
+			"posicionAparecer": {
+				"x": 2.0,
+				"y": -6.0
+			}
+	  }
+
+    ]
+}
