@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class TucanVerdeMov : MonoBehaviour {
+public class TucanVerdeMov : MonoBehaviour
+{
 
-    
+
     private GameManager manager;
-   
+
     // Awake is called when the script instance is being loaded
     private void Awake()
     {
@@ -16,14 +15,14 @@ public class TucanVerdeMov : MonoBehaviour {
 
     // Use this for initialization
     private void Start()
-    {      
+    {
 
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        PosicionarEnemigoEnInicio();              
-     
+        PosicionarEnemigoEnInicio();
+
     }
 
-        
+
     //----------------------METODOS-------------------------------------------
 
 
@@ -33,7 +32,7 @@ public class TucanVerdeMov : MonoBehaviour {
     /// </summary>
     void PosicionarEnemigoEnInicio()
     {
-        Vector2 posicionInicial = new Vector2(Random.Range((manager.extremoIzquirda.x + manager.extremoDerecha.x) / 2 + 2,manager.extremoDerecha.x - 1), Random.Range(manager.extremoAbajo.y, manager.extremoArriba.y));
+        Vector2 posicionInicial = new Vector2(Random.Range((manager.extremoIzquirda.x + manager.extremoDerecha.x) / 2 + 2, manager.extremoDerecha.x - 1), Random.Range(manager.extremoAbajo.y, manager.extremoArriba.y));
         transform.position = posicionInicial;
     }
 

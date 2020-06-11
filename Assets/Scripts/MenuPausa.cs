@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class MenuPausa : MonoBehaviour {
+public class MenuPausa : MonoBehaviour
+{
 
-	public static bool JuegoPausado = false;
+    public static bool JuegoPausado = false;
     public ManejadorScenes manejadorScenes;
     public GameObject menuPausa;
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         if (Input.GetButtonDown("StartPausa"))
         {
-            if(JuegoPausado)
+            if (JuegoPausado)
             {
                 ReanudarJuego();
             }
@@ -22,14 +21,14 @@ public class MenuPausa : MonoBehaviour {
                 PausarJuego();
             }
         }
-	}
+    }
 
     public void PausarJuego()
     {
         menuPausa.SetActive(true);
         Time.timeScale = 0f;
         JuegoPausado = true;
-            
+
     }
 
     public void ReanudarJuego()

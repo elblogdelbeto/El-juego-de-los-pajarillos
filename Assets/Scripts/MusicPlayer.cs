@@ -1,33 +1,34 @@
 ﻿//Encargado de manejar la musica durante todo el juego se crea en cada escena si no está creado ya (simulado singleton)
 
 using UnityEngine;
-using System.Collections;
 
 using UnityEngine.SceneManagement;
 
 
-public class MusicPlayer : MonoBehaviour {
+public class MusicPlayer : MonoBehaviour
+{
 
     public static MusicPlayer musicPlayer;
 
-    public AudioClip[] musicas;  
+    public AudioClip[] musicas;
     private AudioSource audioSource;
-	
-	void Awake () {
 
-        if(musicPlayer == null)
+    void Awake()
+    {
+
+        if (musicPlayer == null)
         {
             DontDestroyOnLoad(gameObject);
             musicPlayer = this;
 
         }
-        else if(musicPlayer != this)
+        else if (musicPlayer != this)
         {
             Destroy(gameObject);
         }
-        
+
         audioSource = GetComponent<AudioSource>();
-        
+
     }
 
 

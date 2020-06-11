@@ -1,12 +1,11 @@
 ﻿/* Para moverte entre scenes y darle un tiempo de espera antes de cargar 
  */
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ManejadorScenes : MonoBehaviour {
+public class ManejadorScenes : MonoBehaviour
+{
 
     public float tiempoCargaAutNivel = 0;
 

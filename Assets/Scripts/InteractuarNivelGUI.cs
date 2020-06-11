@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class InteractuarNivelGUI : MonoBehaviour {
+public class InteractuarNivelGUI : MonoBehaviour
+{
 
     public int idNivel;
-    public GameObject confirmarNivel;    
+    public GameObject confirmarNivel;
 
     private void OnMouseUpAsButton()
     {

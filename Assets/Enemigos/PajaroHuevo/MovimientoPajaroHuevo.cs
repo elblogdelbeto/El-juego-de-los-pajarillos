@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class MovimientoPajaroHuevo : MonoBehaviour {
+public class MovimientoPajaroHuevo : MonoBehaviour
+{
 
 
     public float velocidad = 1f;
@@ -10,7 +9,7 @@ public class MovimientoPajaroHuevo : MonoBehaviour {
 
     private Enemigo enemigo;
     private GameManager manager;
-    private Rigidbody2D rigidBody; 
+    private Rigidbody2D rigidBody;
     private GameObject objetivo;
 
     // Awake is called when the script instance is being loaded
@@ -38,11 +37,11 @@ public class MovimientoPajaroHuevo : MonoBehaviour {
             rigidBody.velocity = movimiento * velocidad;
         }
 
-        if(objetivo.transform.position.x > transform.position.x)
+        if (objetivo.transform.position.x > transform.position.x)
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
-       
+
     }
 
 
@@ -53,9 +52,9 @@ public class MovimientoPajaroHuevo : MonoBehaviour {
         {
             if (
                 transform.position.x < manager.extremoIzquirda.x - 3 ||
-                transform.position.x > manager.extremoDerecha.x +3 ||
+                transform.position.x > manager.extremoDerecha.x + 3 ||
                 transform.position.y < manager.extremoAbajo.y - 3 ||
-                transform.position.y > manager.extremoArriba.y + 3 
+                transform.position.y > manager.extremoArriba.y + 3
                 )
             {
                 PosicionarEnemigoEnInicio();
@@ -65,7 +64,7 @@ public class MovimientoPajaroHuevo : MonoBehaviour {
 
 
     //----------------------METODOS-------------------------------------------
-    
+
 
     /// <summary>
     /// Pone el enemigo en posicion inicial random de la pantalla a la derecha afuera

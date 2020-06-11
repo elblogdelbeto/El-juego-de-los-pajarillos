@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public enum TipoItem
 {
@@ -11,7 +9,8 @@ public enum TipoItem
     piedras
 }
 
-public class Item : MonoBehaviour {
+public class Item : MonoBehaviour
+{
 
     public Fondo fondoImagen;
     public float velocidadHorizontal = 1;
@@ -28,23 +27,25 @@ public class Item : MonoBehaviour {
     float velocidadFondo;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         rb = GetComponentInChildren<Rigidbody2D>();
         if (fondoImagen)
             velocidadFondo = fondoImagen.velocidadScroll / 6;
         else
             Debug.Log("falta signar Fondo en editor");
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-        
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+
         rb.gravityScale = rb.gravityScale * velocidadVertical;
         if (verticalInvertido)
             rb.gravityScale = rb.gravityScale * (-1);
 
-        rb.AddForce(new Vector2(-(velocidadFondo*velocidadHorizontal), 0));
-	}
+        rb.AddForce(new Vector2(-(velocidadFondo * velocidadHorizontal), 0));
+    }
 
     public void RecogerItem()
     {

@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class FormationController : MonoBehaviour {
+public class FormationController : MonoBehaviour
+{
 
     public GameObject enemigoPrefab;
     public float ancho = 4f;
@@ -17,20 +16,21 @@ public class FormationController : MonoBehaviour {
 
     // Awake is called when the script instance is being loaded
     private void Awake()
-    {       
+    {
         float distanciaCamara = transform.position.z - Camera.main.transform.position.z;
         Vector3 extremoIzquierdo = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanciaCamara));
         Vector3 extremoDerecho = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distanciaCamara));
-        xmin = extremoIzquierdo.x + margen + (ancho/2);
-        xmax = extremoDerecho.x - margen - (ancho/2);
+        xmin = extremoIzquierdo.x + margen + (ancho / 2);
+        xmax = extremoDerecho.x - margen - (ancho / 2);
 
         ReclutarOleada();
     }
-    
+
 
     // Use this for initialization
-    void Start () {
-       
+    void Start()
+    {
+
     }
 
     // Implement this OnDrawGizmosSelected if you want to draw gizmos only if the object is selected
@@ -38,18 +38,19 @@ public class FormationController : MonoBehaviour {
     {
         Gizmos.DrawWireCube(transform.position, new Vector3(ancho, alto, 0));
     }
-    
-    // Update is called once per frame
-    void Update () {
 
-        if(avanzaDerecha)
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (avanzaDerecha)
         {
             transform.position += Vector3.right * velocidad * Time.deltaTime;
             foreach (Transform PosicionEnemiga in transform)
             {
                 PosicionEnemiga.rotation = new Quaternion(0, 180, 0, 0);
-            }            
-            if(transform.position.x >= xmax)
+            }
+            if (transform.position.x >= xmax)
             {
                 avanzaDerecha = false;
             }
@@ -60,18 +61,18 @@ public class FormationController : MonoBehaviour {
             foreach (Transform PosicionEnemiga in transform)
             {
                 PosicionEnemiga.rotation = Quaternion.identity;
-            }                
+            }
             if (transform.position.x <= xmin)
             {
                 avanzaDerecha = true;
             }
         }
 
-        if(TodosEnemigosMuertos())
+        if (TodosEnemigosMuertos())
         {
             ReclutarHastaLlenar();
         }
-       
+
     }
 
     void ReclutarOleada()
@@ -96,7 +97,7 @@ public class FormationController : MonoBehaviour {
         {
             Invoke("ReclutarHastaLlenar", retrasoReclutar);
         }
-        
+
     }
 
     Transform NextFreePosition()

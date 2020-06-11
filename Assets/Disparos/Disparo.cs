@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public enum Bando
 {
@@ -10,20 +8,21 @@ public enum Bando
 
 
 
-public class Disparo : MonoBehaviour {
-        
-    public float damage = 10f;   
+public class Disparo : MonoBehaviour
+{
+
+    public float damage = 10f;
     public float tiempoDestruir;
     public float disparoVelocidad = 20f;
     public float tiempoEntreDisparos = 0.3f;  // Allow 3 shots per second   
-    public Bando bando = Bando.enemigo;    
+    public Bando bando = Bando.enemigo;
     public AudioClip sonidoDisparo;
     public GameObject efectoImpacto;
     public bool TieneAnimacionDestruir = false;
 
     protected Jugador jugador;
 
-    
+
 
     private void Awake()
     {
@@ -39,10 +38,10 @@ public class Disparo : MonoBehaviour {
             audioSource.Play();
         }
     }
-        
+
     public void Destruir()
     {
-        if (!TieneAnimacionDestruir)        
+        if (!TieneAnimacionDestruir)
         {
             Destroy(gameObject, tiempoDestruir);
             if (efectoImpacto)

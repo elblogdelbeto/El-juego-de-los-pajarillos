@@ -1,19 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class Niveles : MonoBehaviour {
+public class Niveles : MonoBehaviour
+{
 
-  
-    public Sprite nivelDesbloquedo;                
-    public Sprite nivelBloqueado;              
+
+    public Sprite nivelDesbloquedo;
+    public Sprite nivelBloqueado;
     public Sprite unaEstrella;
     public Sprite dosEstrellas;
     public Sprite tresEstrellas;
 
     public List<NivelGUI> listaNiveles = new List<NivelGUI>();
 
-    void Awake () {
+    void Awake()
+    {
 
         GameManager.dificultad = Dificultad.normal;
 
@@ -24,7 +25,7 @@ public class Niveles : MonoBehaviour {
         foreach (NivelGUI niv in listaNiveles)
         {
             Nivel nivel = GameManager.progresoNiveles.Find(n => n.idNivel == niv.idNivel);
-            if(nivel != null)
+            if (nivel != null)
             {
                 niv.desbloqueado = nivel.desbloqueado;
                 switch (GameManager.dificultad)
@@ -43,10 +44,10 @@ public class Niveles : MonoBehaviour {
                         break;
                     default:
                         niv.estrellas = nivel.estrellasDificil;
-                        break;                        
+                        break;
                 }
-                
-            }            
+
+            }
         }
 
 
@@ -67,15 +68,16 @@ public class Niveles : MonoBehaviour {
                 listaNiveles[i].objetoNivel.sprite = nivelBloqueado;
                 //listaNiveles[i].objetoNivel.gameObject.SetActive(false);
             }
-    
+
         }
 
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
 
 
@@ -84,10 +86,10 @@ public class Niveles : MonoBehaviour {
 [System.Serializable]
 public class NivelGUI
 {
-    public SpriteRenderer objetoNivel;          
+    public SpriteRenderer objetoNivel;
     public SpriteRenderer objetoEstrellas;
-    public int idNivel;      
+    public int idNivel;
     public bool desbloqueado;
     public int estrellas;
-  
+
 }

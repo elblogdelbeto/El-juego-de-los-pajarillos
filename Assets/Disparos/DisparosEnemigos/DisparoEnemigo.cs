@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class DisparoEnemigo : MonoBehaviour {
+public class DisparoEnemigo : MonoBehaviour
+{
 
     public AudioClip sonidoDisparo;
     public GameObject disparoPrefab;
@@ -14,19 +13,21 @@ public class DisparoEnemigo : MonoBehaviour {
     //
 
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
 
         float probabilidad = Time.deltaTime * disparosPorSegundo;
-       
+
         if (Random.value <= probabilidad)
         {
             Disparar();
-        }       
+        }
 
     }
 

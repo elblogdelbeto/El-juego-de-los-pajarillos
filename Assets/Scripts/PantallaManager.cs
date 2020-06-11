@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PantallaManager : MonoBehaviour {
+public class PantallaManager : MonoBehaviour
+{
 
     public void LoadLevel(string name)
     {

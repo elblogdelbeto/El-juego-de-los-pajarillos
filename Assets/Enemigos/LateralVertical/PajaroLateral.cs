@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PajaroLateral : MonoBehaviour
 {
-    
+
     public float velocidad = 5f;
     public bool dibujarGizmos = false;
 
@@ -24,12 +22,12 @@ public class PajaroLateral : MonoBehaviour
         Vector2 movimiento = new Vector2(-1, 0);
         rigidBody.velocity = movimiento * velocidad;
     }
-    
+
 
     // Use this for initialization
     private void Start()
-    {              
-        PosicionarEnemigoEnInicio();  
+    {
+        PosicionarEnemigoEnInicio();
 
         AsignarVelocidadMov();
     }
@@ -38,7 +36,7 @@ public class PajaroLateral : MonoBehaviour
     // This function is called every fixed framerate frame, if the MonoBehaviour is enabled
     private void FixedUpdate()
     {
-        if(transform.position.x < manager.extremoIzquirda.x-3)
+        if (transform.position.x < manager.extremoIzquirda.x - 3)
         {
             PosicionarEnemigoEnInicio();
         }
@@ -60,7 +58,7 @@ public class PajaroLateral : MonoBehaviour
 
     public void AsignarVelocidadMov()
     {
-        if(animator)
+        if (animator)
             animator.SetFloat("VelocidadMov", Random.Range(0.5f, 2.0f));
     }
 

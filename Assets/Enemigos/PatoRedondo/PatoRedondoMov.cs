@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PatoRedondoMov : MonoBehaviour {
+public class PatoRedondoMov : MonoBehaviour
+{
 
 
     public float velocidad = 0.5f;
@@ -17,8 +16,8 @@ public class PatoRedondoMov : MonoBehaviour {
     private Rigidbody2D rigidBody;
     private Vector2 movimiento = new Vector2(-1, 0);
     Jugador jugador;
-    
-    
+
+
     float tiempoLlegaObjetivo = 0f; //en 1 ya llegó
 
     private void Awake()
@@ -27,7 +26,7 @@ public class PatoRedondoMov : MonoBehaviour {
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         //AsignarVelocidad(velocidad);
         jugador = GameObject.Find("Jugador").GetComponent<Jugador>();
-       
+
     }
 
 
@@ -45,9 +44,9 @@ public class PatoRedondoMov : MonoBehaviour {
     void Update()
     {
 
-       
+
         // calculate current time within our lerping time range
-        float deltaTiempo = Time.deltaTime * velocidad * Random.Range(0.8f,1.2f);
+        float deltaTiempo = Time.deltaTime * velocidad * Random.Range(0.8f, 1.2f);
         tiempoLlegaObjetivo = tiempoLlegaObjetivo + deltaTiempo;
         // calculate straight-line lerp position:
         Vector3 currentPos = Vector3.Lerp(startPos, endPos, tiempoLlegaObjetivo);
@@ -55,14 +54,14 @@ public class PatoRedondoMov : MonoBehaviour {
         currentPos.y += trajectoryHeight * Mathf.Sin(Mathf.Clamp01(tiempoLlegaObjetivo) * Mathf.PI);
         // finally assign the computed position to our gameObject:
         transform.position = currentPos;
-      
+
         //if (transform.position.x < manager.extremoIzquirda.x - 3)
         if (transform.position == endPos)
         {
             tiempoLlegaObjetivo = 0;
             startPos = transform.position;
             AsignarObjetivo();
-            if (jugador.transform.position.x>transform.position.x)
+            if (jugador.transform.position.x > transform.position.x)
             {
                 transform.rotation = Quaternion.Euler(0, 180, 0);
             }
@@ -103,7 +102,7 @@ public class PatoRedondoMov : MonoBehaviour {
     void PosicionarEnemigoEnInicio()
     {
 
-        Vector2 posicionInicial = new Vector2(manager.extremoDerecha.x + 1, Random.Range(manager.extremoAbajo.y -3, manager.extremoArriba.y - 3));
+        Vector2 posicionInicial = new Vector2(manager.extremoDerecha.x + 1, Random.Range(manager.extremoAbajo.y - 3, manager.extremoArriba.y - 3));
         transform.position = posicionInicial;
 
         tiempoLlegaObjetivo = 0;

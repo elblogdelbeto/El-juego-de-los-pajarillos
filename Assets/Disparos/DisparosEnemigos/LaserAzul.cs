@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿public class LaserAzul : Disparo
+{
 
-public class LaserAzul : Disparo {
-      
 
-   
+
 }

@@ -1,15 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class MovimientoPajaroFleco : MonoBehaviour {
+public class MovimientoPajaroFleco : MonoBehaviour
+{
 
     public float velocidad = 5.0f;
 
 
     private GameManager manager;
     private Rigidbody2D rigidBody;
-    private Vector2 movimiento = new Vector2(-1, 0);    
+    private Vector2 movimiento = new Vector2(-1, 0);
 
     // Awake is called when the script instance is being loaded
     private void Awake()
@@ -26,9 +25,9 @@ public class MovimientoPajaroFleco : MonoBehaviour {
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         PosicionarEnemigoEnInicio();
 
-        AsignarVelocidad(velocidad);      
+        AsignarVelocidad(velocidad);
     }
-    
+
 
     // This function is called every fixed framerate frame, if the MonoBehaviour is enabled
     private void FixedUpdate()
@@ -55,7 +54,7 @@ public class MovimientoPajaroFleco : MonoBehaviour {
     /// </summary>
     void PosicionarEnemigoEnInicio()
     {
-        Vector2 posicionInicial = new Vector2(manager.extremoDerecha.x + 2, Random.Range(manager.extremoAbajo.y, manager.extremoArriba.y-2));
+        Vector2 posicionInicial = new Vector2(manager.extremoDerecha.x + 2, Random.Range(manager.extremoAbajo.y, manager.extremoArriba.y - 2));
         transform.position = posicionInicial;
     }
 

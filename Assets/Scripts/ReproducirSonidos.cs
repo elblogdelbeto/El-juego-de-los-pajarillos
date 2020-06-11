@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ReproducirSonidos : MonoBehaviour {
+public class ReproducirSonidos : MonoBehaviour
+{
 
     public AudioClip sonidoLevelComplete;
     public AudioClip sonidoAparecerLetrero;
@@ -14,8 +13,8 @@ public class ReproducirSonidos : MonoBehaviour {
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
-        audioSource = gameManager.GetComponent<AudioSource>();        
-      
+        audioSource = gameManager.GetComponent<AudioSource>();
+
     }
 
     public void ReproducorSonido(int value) //llamado desde animation

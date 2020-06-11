@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class AnimationAutoDestroy : MonoBehaviour {
+public class AnimationAutoDestroy : MonoBehaviour
+{
 
     public float delay = 0f;
 

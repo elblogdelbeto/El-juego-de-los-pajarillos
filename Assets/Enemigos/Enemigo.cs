@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -12,14 +11,15 @@ public enum DificultadEnemigo
 
 
 //[RequireComponent(typeof(Collider2D))]
-public class Enemigo : MonoBehaviour {
+public class Enemigo : MonoBehaviour
+{
 
-    public float health = 150;    
-    public int puntosQueDa = 150;    
+    public float health = 150;
+    public int puntosQueDa = 150;
     public AudioClip sonidoMuerte;
     public float damageChoque = 20;
     public GameObject explosionPrefab;
-    public int valorOcupaPantalla = 1; 
+    public int valorOcupaPantalla = 1;
     public float tiempoDestruir = 0.05f;
     public bool inicioAleatorio = true;
     public bool reaparecer = false;
@@ -31,30 +31,31 @@ public class Enemigo : MonoBehaviour {
     protected Material materialOriginal;
     [SerializeField]
     protected Material materialBlanquear;
-    protected bool sigueVivo = true; 
+    protected bool sigueVivo = true;
 
 
     // EVENTOS ----------------------------------------------------------------------------------------------------------
     //------------------------------------------------------------------------------------------------------------------
-    
-  
-    protected void Start () {
+
+
+    protected void Start()
+    {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         hordaManager = FindObjectOfType<HordaManager>();
         contenedorDisparos = GameObject.Find("ContenedorDisparos").gameObject;
         materialOriginal = gameObject.GetComponentInChildren<SpriteRenderer>().material;
     }
-	
+
 
     /// <summary>
     ///  Si colisiona con el jugador o disparo de jugador   
     /// </summary>
     /// <param name="collision">colision de jugador o disparo</param>   
     protected void OnTriggerEnter2D(Collider2D collision)
-    {        
+    {
         Disparo disparo = collision.gameObject.GetComponent<Disparo>();
-        if(!disparo)
+        if (!disparo)
         {
             disparo = collision.gameObject.GetComponentInParent<Disparo>();
         }
@@ -65,7 +66,7 @@ public class Enemigo : MonoBehaviour {
                 RecibeDanio(disparo.damage);
                 disparo.Destruir();
             }
-        }       
+        }
     }
 
 
@@ -95,7 +96,7 @@ public class Enemigo : MonoBehaviour {
         if (sigueVivo)
         {
             sigueVivo = false;
-            
+
             gameManager.ContadorEnemigosPantalla--;
 
             if (hordaManager)
@@ -113,10 +114,10 @@ public class Enemigo : MonoBehaviour {
                     AudioSource.PlayClipAtPoint(sonidoMuerte, Camera.main.transform.position);
                 scoreKeeper.Score(puntosQueDa);
             }
-            Destroy(gameObject, tiempoDestruir);            
-           
+            Destroy(gameObject, tiempoDestruir);
+
         }
-        
+
     }
 
     // CORRUTINAS ----------------------------------------------------------------------------------------------------------
@@ -130,7 +131,7 @@ public class Enemigo : MonoBehaviour {
         foreach (SpriteRenderer item in sprites)
         {
             item.material = materialBlanquear;
-        }      
+        }
 
         yield return new WaitForSeconds(0.1f);
 

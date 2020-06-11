@@ -1,10 +1,8 @@
-﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.SceneManagement;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using System;
+using UnityEngine;
 
 
 public enum Dificultad
@@ -37,11 +35,12 @@ public class Nivel
 }
 
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
 
     public static GameManager gameManager;
 
-    
+
     public float velocidadJuego = 1.0f;
     public int enemigosMaximosPantalla = 6;
     public bool gameOver = false;
@@ -67,11 +66,11 @@ public class GameManager : MonoBehaviour {
     public GameObject contenedorEnemigos;
 
     public static ManejadorScenes manejadorScenes;
-    
+
 
     // Awake is called when the script instance is being loaded
     private void Awake()
-    {    
+    {
 
         if (gameManager == null)
         {
@@ -79,8 +78,7 @@ public class GameManager : MonoBehaviour {
 
             QualitySettings.vSyncCount = 1;
             Application.targetFrameRate = frames;
-            Time.timeScale = velocidadJuego;
-            contenedorEnemigos = GameObject.Find("ContenedorEnemigos");            
+            Time.timeScale = velocidadJuego;            
             manejadorScenes = GameObject.FindObjectOfType<ManejadorScenes>();
             float distanciaCamara = transform.position.z - Camera.main.transform.position.z;
             extremoAbajo = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanciaCamara));
@@ -96,9 +94,9 @@ public class GameManager : MonoBehaviour {
             gameManager.contenedorEnemigos = GameObject.Find("ContenedorEnemigos");
             Destroy(gameObject);
         }
-       
 
-        
+
+
     }
 
 
@@ -106,7 +104,7 @@ public class GameManager : MonoBehaviour {
     //  ---- METODOS--------------------------------------------------------------------------------------------
 
     public void GameOver()
-    {      
+    {
         gameOver = true;
         GameManager.manejadorScenes.CargarEscena("03_GameOver_01");
     }
@@ -139,7 +137,7 @@ public class GameManager : MonoBehaviour {
 
     public static void CargarPartida()
     {
-        if(File.Exists(Application.persistentDataPath+ "/SalvadaJuego.dat"))
+        if (File.Exists(Application.persistentDataPath + "/SalvadaJuego.dat"))
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/SalvadaJuego.dat", FileMode.Open);
@@ -155,8 +153,8 @@ public class GameManager : MonoBehaviour {
         }
 
     }
-    
-        
+
+
 }
 
 

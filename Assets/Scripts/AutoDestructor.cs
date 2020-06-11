@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class AutoDestructor : MonoBehaviour {
+public class AutoDestructor : MonoBehaviour
+{
 
     private void Start()
     {

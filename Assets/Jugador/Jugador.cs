@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,13 +10,15 @@ public enum OrientacionHorizontal
 }
 
 
-public class Jugador : MonoBehaviour {
-    
+public class Jugador : MonoBehaviour
+{
+
     public Vector2 posicionInicial = new Vector2(-6, 0);
     public GameObject disparador;
     public GameObject disparoPrefab;
     public GameObject explosionPrefab;
-    public GameObject danioPrefab;    
+    public GameObject danioPrefab;  
+    public GameObject contenedorDisparos;
     public float saludInicial = 100f;
     public float damageChoque = 50f;
     public int vidas = 5;
@@ -27,36 +28,34 @@ public class Jugador : MonoBehaviour {
     public Item item;
 
     public int puedeDisparar { get; set; }
-  
+
 
     [HideInInspector]
     public OrientacionHorizontal orientacion = OrientacionHorizontal.derecha;
     [HideInInspector]
     public float tiempoUltimoDisparo = 0;
     [HideInInspector]
-    public float inclinacionMovimiento = 15f;
-    [HideInInspector]
-    public GameObject contenedorDisparos;
+    public float inclinacionMovimiento = 15f;    
     [HideInInspector]
     public bool invencible = false;
 
     GameManager manager;
     Animator animator;
-   
+
     protected float health;
     float xmin;
     float xmax;
     float ymin;
     float ymax;
-    float margenEscenario = 0.4f;    
+    float margenEscenario = 0.4f;
     float ButtonCooler = 0.2f;
     int ButtonCount = 0;
-       
+
     bool sigueVivo = true;
     Text textoVidas;
     Slider barraVida;
     SpriteRenderer spriteRender;
-    AudioSource audioSource;   
+    AudioSource audioSource;
     GameObject botonItem;
 
 
@@ -71,10 +70,10 @@ public class Jugador : MonoBehaviour {
 
     }
 
-    void Start () {
-        disparador = transform.Find("Disparador").gameObject;
-        contenedorDisparos = GameObject.Find("ContenedorDisparos").gameObject;
-        manager = GameObject.Find("GameManager").GetComponent<GameManager>();               
+    void Start()
+    {
+        disparador = transform.Find("Disparador").gameObject;        
+        manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         health = saludInicial;
         textoVidas = GameObject.Find("TextoVidas").GetComponent<Text>();
         textoVidas.text = vidas.ToString();
@@ -116,7 +115,7 @@ public class Jugador : MonoBehaviour {
         if (!invencible)
         {
             Disparo disparo = collision.gameObject.GetComponentInChildren<Disparo>();
-            if(!disparo)
+            if (!disparo)
                 disparo = collision.gameObject.GetComponentInParent<Disparo>();
 
             Enemigo enemigo = collision.gameObject.GetComponentInChildren<Enemigo>();
@@ -135,16 +134,16 @@ public class Jugador : MonoBehaviour {
             {
                 RecibirDanio(enemigo.damageChoque);
                 enemigo.RecibeDanio(damageChoque);
-            }      
+            }
         }
 
     }
 
 
     // Update is called once per frame
-    void FixedUpdate ()
-    {            
-              
+    void FixedUpdate()
+    {
+
     }
 
 
@@ -152,7 +151,7 @@ public class Jugador : MonoBehaviour {
     {
         //posicion del jugador maxima 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xmin, xmax), Mathf.Clamp(transform.position.y, ymin, ymax));
-        
+
     }
 
 
@@ -163,9 +162,9 @@ public class Jugador : MonoBehaviour {
 
     private void GuardarItem(Item itemVal)
     {
-       
+
         botonItem.GetComponent<Button>().interactable = true;
-        Sprite spr = itemVal.sprite;  
+        Sprite spr = itemVal.sprite;
         botonItem.transform.GetChild(0).GetComponent<Image>().sprite = spr;
         item = itemVal;
 
@@ -250,7 +249,7 @@ public class Jugador : MonoBehaviour {
             ButtonCount = 0;
     }
 
-       
+
     public void RecibirDanio(float danio)
     {
         health -= danio;
@@ -261,7 +260,7 @@ public class Jugador : MonoBehaviour {
         else
         {
             barraVida.value = health;
-            Instantiate(danioPrefab, transform, false);           
+            Instantiate(danioPrefab, transform, false);
             //CameraShaker.Instance.ShakeOnce(4f, 4f, 0.05f, 0.5f);
             audioSource.PlayOneShot(sonidoDanio, 1);
 
@@ -276,7 +275,7 @@ public class Jugador : MonoBehaviour {
         {
             sigueVivo = false;
             vidas--;
-            textoVidas.text = vidas.ToString();       
+            textoVidas.text = vidas.ToString();
             audioSource.PlayOneShot(sonidoMuerte, 1);
             //CameraShaker.Instance.ShakeOnce(4f, 4f, 0.05f, 0.5f);
             Instantiate(explosionPrefab, transform.position, transform.rotation);
@@ -293,7 +292,7 @@ public class Jugador : MonoBehaviour {
                 sigueVivo = true;
             }
         }
-       
+
     }
 
     private void AsignarInvencible(int value)
@@ -304,7 +303,7 @@ public class Jugador : MonoBehaviour {
             animator.SetBool("GirarEsquivar", false);
             animator.SetBool("DanioParpadeo", false);
         }
-           
+
     }
 
 
@@ -315,27 +314,27 @@ public class Jugador : MonoBehaviour {
     }
 
     // Corrutinas -----------------------------------------------------------------------------------------------
-   
-         
-    
+
+
+
     private IEnumerator AnimacionDanioBlink()
     {
-            invencible = true;
-            float tiempoParpadear = 5f * Time.deltaTime;
-            float tiempoParpadeoTranscurrido = 0.0f;
+        invencible = true;
+        float tiempoParpadear = 5f * Time.deltaTime;
+        float tiempoParpadeoTranscurrido = 0.0f;
 
-            while (tiempoParpadeoTranscurrido < 40f * Time.deltaTime)
-            {
-                spriteRender.color = new Color(1, 1, 1, 0);
-                tiempoParpadeoTranscurrido += tiempoParpadear;
-                yield return new WaitForSeconds(tiempoParpadear);
-                spriteRender.color = new Color(1, 1, 1, 1);
-                tiempoParpadeoTranscurrido += tiempoParpadear * 1.2f;
-                yield return new WaitForSeconds(tiempoParpadear * 1.2f);
-            }
-
+        while (tiempoParpadeoTranscurrido < 40f * Time.deltaTime)
+        {
+            spriteRender.color = new Color(1, 1, 1, 0);
+            tiempoParpadeoTranscurrido += tiempoParpadear;
+            yield return new WaitForSeconds(tiempoParpadear);
             spriteRender.color = new Color(1, 1, 1, 1);
-            invencible = false;
-            yield break;     
+            tiempoParpadeoTranscurrido += tiempoParpadear * 1.2f;
+            yield return new WaitForSeconds(tiempoParpadear * 1.2f);
+        }
+
+        spriteRender.color = new Color(1, 1, 1, 1);
+        invencible = false;
+        yield break;
     }
 }

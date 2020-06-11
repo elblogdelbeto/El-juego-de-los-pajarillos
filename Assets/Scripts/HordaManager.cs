@@ -1,9 +1,9 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HordaManager : MonoBehaviour {
+public class HordaManager : MonoBehaviour
+{
 
     public GameObject[] enemigos;
     public float esperaOrda = 6f;
@@ -27,7 +27,7 @@ public class HordaManager : MonoBehaviour {
     [HideInInspector]
     public Text textoNumOrda;
 
-    private GameManager gameManager;      
+    private GameManager gameManager;
     private int noOrda = 1;
     private int enemigosRestantesOrda = 0;
     [HideInInspector]
@@ -43,20 +43,22 @@ public class HordaManager : MonoBehaviour {
         textoEnemigos.text = EnemigosRestantesOrda.ToString();
         textoNumOrda = GameObject.Find("NumOrda").GetComponent<Text>();
         textoNumOrda.text = noOrda.ToString();
-        
+
     }
 
 
 
     // Use this for initialization
-    void Start () {
-         StartCoroutine(ConvocarOrda());
+    void Start()
+    {
+        StartCoroutine(ConvocarOrda());
     }
 
     // Update is called once per frame
-    void Update () {
-		
-	}
+    void Update()
+    {
+
+    }
 
 
     //Metodos-----------------------------------------------------------------------------------
@@ -85,7 +87,7 @@ public class HordaManager : MonoBehaviour {
                         numeroRepeticionesenemigo--;
                     }
                     GameObject goEnemigo = enemigos[indiceEnemigo];
-                    contadorEnemigosPantalla++;                   
+                    contadorEnemigosPantalla++;
                     Instantiate(goEnemigo, gameManager.contenedorEnemigos.transform, true);
                     yield return new WaitForSeconds(esperaEnemigo);
                 }

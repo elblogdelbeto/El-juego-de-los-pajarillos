@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class PantallaFinNivel : MonoBehaviour {
+public class PantallaFinNivel : MonoBehaviour
+{
 
 
     public Text textoCantidadPuntos;
@@ -11,11 +10,11 @@ public class PantallaFinNivel : MonoBehaviour {
     public Sprite estrellaCompleta;
     public NivelCampaniaManager nivelCampaniaManager;
     public Image estrellaPuntos;
-       
+
 
     private void Awake()
     {
-        
+
     }
 
 
@@ -34,12 +33,12 @@ public class PantallaFinNivel : MonoBehaviour {
         if (porcentajeLogrado >= nivelCampaniaManager.nivelEstructura.porcentajePuntosEstrella)
         {
             estrellaPuntos.sprite = estrellaCompleta;
-        }            
+        }
         else if (porcentajeLogrado >= nivelCampaniaManager.nivelEstructura.porcentajePuntosMediaEstrella)
         {
             estrellaPuntos.sprite = mediaEstrella;
         }
-            
+
 
     }
 

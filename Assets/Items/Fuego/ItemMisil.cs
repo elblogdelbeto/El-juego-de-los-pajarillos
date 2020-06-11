@@ -1,23 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ItemMisil : MonoBehaviour {
+public class ItemMisil : MonoBehaviour
+{
 
     private Disparo disparo;
     private Jugador jugador;
-    
+
 
     private void Awake()
     {
         disparo = gameObject.GetComponent<Disparo>();
         jugador = GameObject.FindObjectOfType<Jugador>();
-        
+
     }
 
-    
+
     private void Start()
-    {      
+    {
         Desplegar();
     }
 
@@ -39,7 +38,7 @@ public class ItemMisil : MonoBehaviour {
 
     public void DestruirObjetoMisil()
     {
-        Destroy(gameObject, 0.05f); 
+        Destroy(gameObject, 0.05f);
     }
 
 

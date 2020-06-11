@@ -1,9 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NivelCampaniaManager : MonoBehaviour {
+public class NivelCampaniaManager : MonoBehaviour
+{
 
     public Slider sliderProgresoNivel;
     public NivelEstructura nivelEstructura;
@@ -12,27 +12,29 @@ public class NivelCampaniaManager : MonoBehaviour {
     public Meta meta;
     GameManager gameManager;
     Fondo fondo;
-    int enemigosDesplegados = 0;   
+    int enemigosDesplegados = 0;
     Dictionary<string, GameObject> DiccionarioEnemigos = new Dictionary<string, GameObject>();
-   
+
 
     private void Awake()
-    {      
+    {
         gameManager = FindObjectOfType<GameManager>();
         fondo = FindObjectOfType<Fondo>();
     }
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
         nivelEstructura = CargarNivelDesdeArchivo(numNivel);
         sliderProgresoNivel.maxValue = nivelEstructura.duracionTiempo;
         ArrancarNivel(nivelEstructura);
-        
+
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
 
         CorrerNivel(nivelEstructura);
 
@@ -67,7 +69,7 @@ public class NivelCampaniaManager : MonoBehaviour {
                  dificultadEnemigo = DificultadEnemigo.normal,
                  inicioAleatorio = true,
                  reaparecer = false,
-                 puntosEnemigo = 0                 
+                 puntosEnemigo = 0
              };
         List<NivelEstructura.EnemigoNivel> enemigosNivel = new List<NivelEstructura.EnemigoNivel>();
         enemigosNivel.Add(level);
@@ -111,7 +113,7 @@ public class NivelCampaniaManager : MonoBehaviour {
         }
 
         MusicPlayer.musicPlayer.ReproducirMusica(nivel.musica);
-   
+
     }
 
     private void CorrerNivel(NivelEstructura nivel)
@@ -159,7 +161,7 @@ public class NivelCampaniaManager : MonoBehaviour {
                         break;
                 }
 
-                if(nivel.enemigosNivel[i].puntosEnemigo <= 0)
+                if (nivel.enemigosNivel[i].puntosEnemigo <= 0)
                     nivel.enemigosNivel[i].puntosEnemigo = goEnem.GetComponent<Enemigo>().puntosQueDa;
 
                 Instantiate(goEnem, auxLugarAparecer, Quaternion.identity, gameManager.contenedorEnemigos.transform);
@@ -169,11 +171,11 @@ public class NivelCampaniaManager : MonoBehaviour {
         }
         meta.gameObject.SetActive(true);
         meta.transform.localPosition = new Vector2(10, 0);
-     
+
 
     }
 
-    
+
 
 
 }

@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class DrawGizmos : MonoBehaviour {
+public class DrawGizmos : MonoBehaviour
+{
 
     enum DibujarGizmo
     {

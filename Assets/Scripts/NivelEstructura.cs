@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class NivelEstructura  {
-    
+public class NivelEstructura
+{
+
 
     [Serializable]
     public class EnemigoNivel

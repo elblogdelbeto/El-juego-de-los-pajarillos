@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,14 +11,15 @@ enum TipoControles
     BotonesFisicos
 }
 
-public class TouchAndControls : MonoBehaviour {
+public class TouchAndControls : MonoBehaviour
+{
 
     public float velocidadStick = 3F;
     public float velocidadMovimiento = 20F;
     public float velocidadSeguimiento = 10F;
     public Transform botonPoder; //Drag a button transform on to here, and see how to toggle it when Space is pressed
     public Button botonVoltearse;
- 
+
     Rigidbody2D rb2D;
     Jugador jugador;
     float anguloZ = 0;
@@ -44,7 +44,7 @@ public class TouchAndControls : MonoBehaviour {
         maxResolucion = Math.Max(Screen.width, Screen.height);
         jugador = gameObject.GetComponent<Jugador>();
         botonPoder.GetComponent<Button>().interactable = false;
-        rb2D = GetComponent<Rigidbody2D>(); 
+        rb2D = GetComponent<Rigidbody2D>();
     }
 
 
@@ -53,11 +53,11 @@ public class TouchAndControls : MonoBehaviour {
         if (!MenuPausa.JuegoPausado)
         {
             if (Input.touchSupported
-                #if UNITY_EDITOR
+#if UNITY_EDITOR
                 || UnityEditor.EditorApplication.isRemoteConnected
-                #endif
+#endif
               )
-            {              
+            {
                 Disparar(TipoControles.Tactiles);
                 // MovimientoSeguirTouch();
                 MovimientoTouchDeslizar();
@@ -72,7 +72,7 @@ public class TouchAndControls : MonoBehaviour {
                 Voltearse(false);
                 Disparar(TipoControles.BotonesFisicos);
                 MoverteControlesVelocidad();
-            }                       
+            }
         }
     }
 
@@ -83,18 +83,18 @@ public class TouchAndControls : MonoBehaviour {
         if (!MenuPausa.JuegoPausado)
         {
             if (Input.touchSupported
-            #if UNITY_EDITOR
+#if UNITY_EDITOR
                 || UnityEditor.EditorApplication.isRemoteConnected
-            #endif
+#endif
               )
-            {              
+            {
 
                 MovimientoTouchAplicandoFisica();
 
             }
             else
             {
-               
+
             }
         }
     }
@@ -128,7 +128,7 @@ public class TouchAndControls : MonoBehaviour {
                 {
                     anguloZ = Mathf.Clamp(anguloZ + ((finVec.y - inicioVec.y) * 0.3f), -jugador.inclinacionMovimiento, jugador.inclinacionMovimiento);
                 }
-                
+
             }
             if (touch.phase == TouchPhase.Ended)
             {
@@ -151,11 +151,11 @@ public class TouchAndControls : MonoBehaviour {
 
         gameObject.GetComponent<Transform>().rotation = Quaternion.Euler(0, anguloY, anguloZ);
     }
-    
+
 
     void MovimientoTouchAplicandoFisica()
     {
-        rb2D.velocity = ((finVec - inicioVec)/ maxResolucion) * velocidadMovimiento;
+        rb2D.velocity = ((finVec - inicioVec) / maxResolucion) * velocidadMovimiento;
         inicioVec = touch.position;
         finVec = touch.position;
     }
@@ -215,12 +215,12 @@ public class TouchAndControls : MonoBehaviour {
 
     }
 
-    
+
 
 
 
     void MovimientoTouchDeslizar2()
-    {       
+    {
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0); // get first touch since touch count is greater than zero          
@@ -230,10 +230,10 @@ public class TouchAndControls : MonoBehaviour {
                 Vector3 nuevaPosicion = new Vector3(touch.deltaPosition.x * velocidadMovimiento * Time.deltaTime, touch.deltaPosition.y * velocidadMovimiento * Time.deltaTime, 0);
                 transform.Translate(nuevaPosicion);
             }
-        }     
- 
+        }
+
     }
-    
+
 
     void MovimientoSeguirTouch()
     {
@@ -242,7 +242,7 @@ public class TouchAndControls : MonoBehaviour {
             Touch touch = Input.GetTouch(0); // get first touch since touch count is greater than zero
 
             if ((touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved))
-            {                
+            {
                 // get the touch position from the screen touch to world point
                 touchedPos = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x + 20, touch.position.y, 0));
                 // lerp and set the position of the current object to that of the touch, but smoothly over time.
@@ -273,8 +273,8 @@ public class TouchAndControls : MonoBehaviour {
 
 
     public void Voltearse(bool botonTouch)
-    {       
-         
+    {
+
         // dos comandos para voltear
         if (Input.GetButtonDown("Voltear") || botonTouch)
         {
@@ -333,7 +333,7 @@ public class TouchAndControls : MonoBehaviour {
 
     private void Disparar(TipoControles tipo)
     {
-        if(jugador.puedeDisparar > 0)
+        if (jugador.puedeDisparar > 0)
         {
             if (tipo == TipoControles.BotonesFisicos)
             {
@@ -345,13 +345,13 @@ public class TouchAndControls : MonoBehaviour {
                 DispararTactil();
             }
         }
-      
-          
+
+
     }
 
     private void DispararBotones()
     {
-       
+
         Vector3 inicioDisparo = new Vector3(jugador.disparador.transform.position.x, jugador.disparador.transform.position.y, transform.position.z);
         Disparo disparo = jugador.disparoPrefab.GetComponent<Disparo>();
 
@@ -380,7 +380,7 @@ public class TouchAndControls : MonoBehaviour {
             }
 
         }
-        
+
 
     }
 
@@ -388,7 +388,7 @@ public class TouchAndControls : MonoBehaviour {
 
     private void DispararTactil()
     {
-      
+
         Vector3 inicioDisparo = new Vector3(jugador.disparador.transform.position.x, jugador.disparador.transform.position.y, transform.position.z);
         Disparo disparo = jugador.disparoPrefab.GetComponent<Disparo>();
 
@@ -424,7 +424,7 @@ public class TouchAndControls : MonoBehaviour {
                     }
                 }
             }
-        }       
+        }
 
     }
 
