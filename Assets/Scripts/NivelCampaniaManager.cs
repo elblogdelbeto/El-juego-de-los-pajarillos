@@ -7,13 +7,14 @@ public class NivelCampaniaManager : MonoBehaviour
 
     public Slider sliderProgresoNivel;
     public NivelEstructura nivelEstructura;
+    public Meta meta;
 
     static public int numNivel = 1;
-    public Meta meta;
+
     GameManager gameManager;
     Fondo fondo;
-    int enemigosDesplegados = 0;
     Dictionary<string, GameObject> DiccionarioEnemigos = new Dictionary<string, GameObject>();
+    int enemigosDesplegados = 0;
 
 
     private void Awake()
@@ -35,8 +36,7 @@ public class NivelCampaniaManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        CorrerNivel(nivelEstructura);
+        CorrerNivel(nivelEstructura);       
 
         //actualizar slider en base al tiempo
         if (sliderProgresoNivel.value < sliderProgresoNivel.maxValue)
@@ -57,40 +57,41 @@ public class NivelCampaniaManager : MonoBehaviour
     {
         Debug.Log("Cargar Nivel: " + numNivel);
 
-        NivelEstructura.EnemigoNivel level =
-             new NivelEstructura.EnemigoNivel()
-             {
-                 identificadorEnemigo = "PajaroHuevo",
-                 saludEnemigo = 100,
-                 tiempoAparecer = 3f,
-                 velocidad = 10f,
-                 posicionAparecer = new Vector2(5, 0),
-                 lugarAparecer = LugarAparecer.derecha,
-                 dificultadEnemigo = DificultadEnemigo.normal,
-                 inicioAleatorio = true,
-                 reaparecer = false,
-                 puntosEnemigo = 0
-             };
-        List<NivelEstructura.EnemigoNivel> enemigosNivel = new List<NivelEstructura.EnemigoNivel>();
-        enemigosNivel.Add(level);
-        NivelEstructura nivelEstructura = new NivelEstructura()
-        {
-            duracionTiempo = 60f,
-            fondo = "fondo01",
-            musica = "musica01",
-            velocidadFondo = 5f,
-            enemigosNivel = enemigosNivel,
-            porcentajePuntosMediaEstrella = 50,
-            porcentajePuntosEstrella = 100,
-            porcentajePunteriaMediaEstrella = 50,
-            porcentajePunteriaEstrella = 100,
-            porcentajeSaludMediaEstrella = 50,
-            porcentajeSaludEstrella = 100
-        };
-        //// serialize object to JSON
-        string jsonString = JsonUtility.ToJson(nivelEstructura, true);
-        //Debug.Log(jsonString);
-
+        #region Ejemplo en codigo de la estructura de un nivel      
+            //NivelEstructura.EnemigoNivel level =
+            //     new NivelEstructura.EnemigoNivel()
+            //     {
+            //         identificadorEnemigo = "PajaroHuevo",
+            //         saludEnemigo = 100,
+            //         tiempoAparecer = 3f,
+            //         velocidad = 10f,
+            //         posicionAparecer = new Vector2(5, 0),
+            //         lugarAparecer = LugarAparecer.derecha,
+            //         dificultadEnemigo = DificultadEnemigo.normal,
+            //         inicioAleatorio = true,
+            //         reaparecer = false,
+            //         puntosEnemigo = 0
+            //     };
+            //List<NivelEstructura.EnemigoNivel> enemigosNivel = new List<NivelEstructura.EnemigoNivel>();
+            //enemigosNivel.Add(level);
+            //NivelEstructura nivelEstructura = new NivelEstructura()
+            //{
+            //    duracionTiempo = 60f,
+            //    fondo = "fondo01",
+            //    musica = "musica01",
+            //    velocidadFondo = 5f,
+            //    enemigosNivel = enemigosNivel,
+            //    porcentajePuntosMediaEstrella = 50,
+            //    porcentajePuntosEstrella = 100,
+            //    porcentajePunteriaMediaEstrella = 50,
+            //    porcentajePunteriaEstrella = 100,
+            //    porcentajeSaludMediaEstrella = 50,
+            //    porcentajeSaludEstrella = 100
+            //};
+            ////// serialize object to JSON
+            //string jsonString = JsonUtility.ToJson(nivelEstructura, true);
+            ////Debug.Log(jsonString);
+        #endregion
 
         //USE TextAsset to load data
         TextAsset txtAsset = (TextAsset)Resources.Load("NivelCampania_" + numNivel, typeof(TextAsset));
@@ -118,13 +119,15 @@ public class NivelCampaniaManager : MonoBehaviour
 
     private void CorrerNivel(NivelEstructura nivel)
     {
-        for (int i = enemigosDesplegados; i < nivel.enemigosNivel.Count; i++)
+        //for (int i = enemigosDesplegados; i < nivel.enemigosNivel.Count; i++)
+        //{
+        //    if ((i + gameManager.ContadorEnemigosPantalla - enemigosDesplegados) > gameManager.enemigosMaximosPantalla)
+        //    {
+        //        break;
+        //    }
+        if (enemigosDesplegados < nivel.enemigosNivel.Count)
         {
-            if ((i + gameManager.ContadorEnemigosPantalla - enemigosDesplegados) > gameManager.enemigosMaximosPantalla)
-            {
-                break;
-            }
-            NivelEstructura.EnemigoNivel enem = nivel.enemigosNivel[i];
+            NivelEstructura.EnemigoNivel enem = nivel.enemigosNivel[enemigosDesplegados];
             if ((Time.timeSinceLevelLoad) >= enem.tiempoAparecer)
             {
 
@@ -161,16 +164,26 @@ public class NivelCampaniaManager : MonoBehaviour
                         break;
                 }
 
-                if (nivel.enemigosNivel[i].puntosEnemigo <= 0)
-                    nivel.enemigosNivel[i].puntosEnemigo = goEnem.GetComponent<Enemigo>().puntosQueDa;
+                if (nivel.enemigosNivel[enemigosDesplegados].puntosEnemigo <= 0)
+                    nivel.enemigosNivel[enemigosDesplegados].puntosEnemigo = goEnem.GetComponent<Enemigo>().puntosQueDa;
 
-                Instantiate(goEnem, auxLugarAparecer, Quaternion.identity, gameManager.contenedorEnemigos.transform);
-                enemigosDesplegados++;
+                Instantiate(goEnem, auxLugarAparecer, Quaternion.identity, gameManager.contenedorEnemigos.transform);               
                 gameManager.ContadorEnemigosPantalla++;
+                enemigosDesplegados++;
             }
         }
-        meta.gameObject.SetActive(true);
-        meta.transform.localPosition = new Vector2(10, 0);
+        if (Time.timeSinceLevelLoad > nivel.duracionTiempo && !meta.gameObject.activeSelf)
+        {
+            meta.transform.position = new Vector3(gameManager.extremoDerecha.x + 3, 0, 0);
+            meta.gameObject.SetActive(true);
+
+
+
+        }
+        
+        //}
+        //meta.gameObject.SetActive(true);
+        //meta.transform.localPosition = new Vector2(10, 0);
 
 
     }

@@ -37,10 +37,6 @@ public class Nivel
 
 public class GameManager : MonoBehaviour
 {
-
-    public static GameManager gameManager;
-
-
     public float velocidadJuego = 1.0f;
     public int enemigosMaximosPantalla = 6;
     public bool gameOver = false;
@@ -64,8 +60,10 @@ public class GameManager : MonoBehaviour
     public Vector3 extremoDerecha;
     public int ContadorEnemigosPantalla { get; set; }
     public GameObject contenedorEnemigos;
+    public GameObject contenedorDisparos;
 
     public static ManejadorScenes manejadorScenes;
+    public static GameManager gameManager;
 
 
     // Awake is called when the script instance is being loaded
@@ -80,18 +78,20 @@ public class GameManager : MonoBehaviour
             Application.targetFrameRate = frames;
             Time.timeScale = velocidadJuego;            
             manejadorScenes = GameObject.FindObjectOfType<ManejadorScenes>();
+
             float distanciaCamara = transform.position.z - Camera.main.transform.position.z;
-            extremoAbajo = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanciaCamara));
-            extremoArriba = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, distanciaCamara));
+                        
             extremoIzquirda = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanciaCamara));
             extremoDerecha = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distanciaCamara));
+            extremoAbajo = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanciaCamara));
+            extremoArriba = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, distanciaCamara));
+
 
             gameManager = this;
 
         }
         else if (gameManager != this)
-        {
-            gameManager.contenedorEnemigos = GameObject.Find("ContenedorEnemigos");
+        {           
             Destroy(gameObject);
         }
 

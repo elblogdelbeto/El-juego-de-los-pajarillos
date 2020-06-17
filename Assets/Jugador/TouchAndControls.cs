@@ -11,39 +11,38 @@ enum TipoControles
     BotonesFisicos
 }
 
+[RequireComponent(typeof(Jugador))]
 public class TouchAndControls : MonoBehaviour
 {
 
     public float velocidadStick = 3F;
     public float velocidadMovimiento = 20F;
-    public float velocidadSeguimiento = 10F;
-    public Transform botonPoder; //Drag a button transform on to here, and see how to toggle it when Space is pressed
-    public Button botonVoltearse;
+    public float velocidadSeguimiento = 10F;   
 
+    GameManager gameManager;
     Rigidbody2D rb2D;
     Jugador jugador;
-    float anguloZ = 0;
-    float anguloY = 0f;
     Vector3 touchedPos;
     Vector2 inicioVec = new Vector2();
     Vector2 finVec = new Vector2();
+    Touch touch;
+    Vector2 pastPosition;
+    public GameObject botonItem { get; set; }
+    float anguloZ = 0;
+    float anguloY = 0f;
     float ButtonCooler = 0.2f;
     int ButtonCount = 0;
     bool touchBeganFueraboton = false;
     int cantidadTouches = 0;
-    Touch touch;
-    Vector2 pastPosition;
     int maxResolucion = 0;
 
     // EVENTOS ---------------------------------------------------------------------------------------------------------------------
 
-
-
     private void Awake()
     {
+        gameManager = FindObjectOfType<GameManager>();
         maxResolucion = Math.Max(Screen.width, Screen.height);
-        jugador = gameObject.GetComponent<Jugador>();
-        botonPoder.GetComponent<Button>().interactable = false;
+        jugador = gameObject.GetComponent<Jugador>();        
         rb2D = GetComponent<Rigidbody2D>();
     }
 
@@ -61,14 +60,10 @@ public class TouchAndControls : MonoBehaviour
                 Disparar(TipoControles.Tactiles);
                 // MovimientoSeguirTouch();
                 MovimientoTouchDeslizar();
-
             }
             else
-            {
-                if (Input.GetButtonDown("Esquivar"))
-                {
-                    jugador.GirarEsquivar();
-                }
+            {              
+                GirarEsquivar(false);                
                 Voltearse(false);
                 Disparar(TipoControles.BotonesFisicos);
                 MoverteControlesVelocidad();
@@ -216,9 +211,6 @@ public class TouchAndControls : MonoBehaviour
     }
 
 
-
-
-
     void MovimientoTouchDeslizar2()
     {
         if (Input.touchCount > 0)
@@ -272,14 +264,51 @@ public class TouchAndControls : MonoBehaviour
 
 
 
+    /// <summary>
+    /// se manda llamar del UI del boton del item
+    /// </summary>
+    public void UsarItem(bool botonTactil)
+    {
+        if (Input.GetButtonDown("UsarItem") || botonTactil)
+        {
+            switch (jugador.item.tipoItem)
+            {
+                case TipoItem.fuego:
+                    Vector2 inicioDisparo = new Vector2(jugador.disparador.transform.position.x, jugador.disparador.transform.position.y);
+                    Instantiate(jugador.item.objetoItemDisparo, inicioDisparo, jugador.disparador.transform.rotation, gameManager.contenedorDisparos.transform);
+                    jugador.tiempoUltimoDisparo = Time.time;
+                    botonItem.GetComponent<Button>().interactable = false;
+                    botonItem.transform.GetChild(0).GetComponent<Image>().sprite = botonItem.transform.GetChild(0).GetComponent<ItemBoton>().spriteDefault;
+
+                    break;
+                case TipoItem.dinamita:
+                    break;
+                case TipoItem.iman:
+                    break;
+                case TipoItem.regalo:
+                    break;
+                case TipoItem.piedras:
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    public void GirarEsquivar(bool botonTouch) //tambien llamdo desde boton UI para mobil
+    {
+        if (Input.GetButtonDown("Esquivar") || botonTouch)
+        {
+            if (!jugador.invencible)
+                jugador.animator.SetBool("GirarEsquivar", true);
+        }
+    }
+
     public void Voltearse(bool botonTouch)
     {
-
         // dos comandos para voltear
         if (Input.GetButtonDown("Voltear") || botonTouch)
         {
-            if (botonTouch && botonVoltearse.GetComponent<Button>().interactable)
-            {
                 if (jugador.orientacion == OrientacionHorizontal.derecha)
                 {
                     transform.rotation = new Quaternion(0, 1, 0, 0);
@@ -289,12 +318,11 @@ public class TouchAndControls : MonoBehaviour
                 {
                     transform.rotation = new Quaternion(0, 0, 0, 0);
                     jugador.orientacion = OrientacionHorizontal.derecha;
-                }
-            }
+                }            
         }
-
-        //VoltearseDobletap();
+        //VoltearseDobletap();        
     }
+
 
 
     private void VoltearseDobleTap()
@@ -330,10 +358,9 @@ public class TouchAndControls : MonoBehaviour
     }
 
 
-
     private void Disparar(TipoControles tipo)
     {
-        if (jugador.puedeDisparar > 0)
+        if (jugador.puedeDisparar)
         {
             if (tipo == TipoControles.BotonesFisicos)
             {
@@ -345,8 +372,6 @@ public class TouchAndControls : MonoBehaviour
                 DispararTactil();
             }
         }
-
-
     }
 
     private void DispararBotones()
@@ -362,7 +387,7 @@ public class TouchAndControls : MonoBehaviour
             {
                 if (Time.time >= jugador.tiempoUltimoDisparo + disparo.tiempoEntreDisparos * 0.5f)
                 {
-                    Instantiate(jugador.disparoPrefab, inicioDisparo, jugador.disparador.transform.rotation, jugador.contenedorDisparos.transform);
+                    Instantiate(jugador.disparoPrefab, inicioDisparo, jugador.disparador.transform.rotation, gameManager.contenedorDisparos.transform);
                     jugador.tiempoUltimoDisparo = Time.time;
                 }
             }
@@ -374,7 +399,7 @@ public class TouchAndControls : MonoBehaviour
             {
                 if (Time.time >= jugador.tiempoUltimoDisparo + disparo.tiempoEntreDisparos)
                 {
-                    Instantiate(jugador.disparoPrefab, inicioDisparo, jugador.disparador.transform.rotation, jugador.contenedorDisparos.transform);
+                    Instantiate(jugador.disparoPrefab, inicioDisparo, jugador.disparador.transform.rotation, gameManager.contenedorDisparos.transform);
                     jugador.tiempoUltimoDisparo = Time.time;
                 }
             }
@@ -383,7 +408,6 @@ public class TouchAndControls : MonoBehaviour
 
 
     }
-
 
 
     private void DispararTactil()
@@ -404,7 +428,7 @@ public class TouchAndControls : MonoBehaviour
                     touchBeganFueraboton = true;
                     if (Time.time >= jugador.tiempoUltimoDisparo + disparo.tiempoEntreDisparos * 0.5f)
                     {
-                        Instantiate(jugador.disparoPrefab, inicioDisparo, jugador.disparador.transform.rotation, jugador.contenedorDisparos.transform);
+                        Instantiate(jugador.disparoPrefab, inicioDisparo, jugador.disparador.transform.rotation, gameManager.contenedorDisparos.transform);
                         jugador.tiempoUltimoDisparo = Time.time;
                     }
                 }
@@ -419,7 +443,7 @@ public class TouchAndControls : MonoBehaviour
                 {
                     if (touchBeganFueraboton || !IsPointerOverUIObject())
                     {
-                        Instantiate(jugador.disparoPrefab, inicioDisparo, jugador.disparador.transform.rotation, jugador.contenedorDisparos.transform);
+                        Instantiate(jugador.disparoPrefab, inicioDisparo, jugador.disparador.transform.rotation, gameManager.contenedorDisparos.transform);
                         jugador.tiempoUltimoDisparo = Time.time;
                     }
                 }
@@ -427,7 +451,6 @@ public class TouchAndControls : MonoBehaviour
         }
 
     }
-
 
 
     //When Touching UI

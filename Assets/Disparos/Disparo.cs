@@ -22,11 +22,14 @@ public class Disparo : MonoBehaviour
 
     protected Jugador jugador;
 
+    GameManager gameManager;
+
 
 
     private void Awake()
     {
         jugador = GameObject.Find("Jugador").GetComponent<Jugador>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     protected void Start()
@@ -45,7 +48,7 @@ public class Disparo : MonoBehaviour
         {
             Destroy(gameObject, tiempoDestruir);
             if (efectoImpacto)
-                Instantiate(efectoImpacto, transform.position, transform.rotation, GameObject.Find("ContenedorDisparos").gameObject.transform);
+                Instantiate(efectoImpacto, transform.position, transform.rotation, gameManager.contenedorDisparos.gameObject.transform);
         }
     }
 

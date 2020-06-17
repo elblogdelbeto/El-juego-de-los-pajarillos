@@ -33,13 +33,13 @@ public class TucanVerdeEnemigo : Enemigo
     {
         AudioSource.PlayClipAtPoint(sonidoDisparo, transform.position);
         Vector2 inicioDisparo = new Vector2(transform.position.x + 0.4f, transform.position.y - 0.4f);
-        GameObject disparo = Instantiate(disparoPrefab, inicioDisparo, Quaternion.identity, contenedorDisparos.transform);
+        GameObject disparo = Instantiate(disparoPrefab, inicioDisparo, Quaternion.identity, gameManager.contenedorDisparos.transform);
         disparo.GetComponent<Rigidbody2D>().velocity = new Vector2(-disparoVelocidad, 0);
 
-        disparo = Instantiate(disparoPrefab, inicioDisparo, Quaternion.Euler(0, 0, 45 / 3), contenedorDisparos.transform);
+        disparo = Instantiate(disparoPrefab, inicioDisparo, Quaternion.Euler(0, 0, 45 / 3), gameManager.contenedorDisparos.transform);
         disparo.GetComponent<Rigidbody2D>().velocity = new Vector2(-disparoVelocidad, -(disparoVelocidad / 3));
 
-        disparo = Instantiate(disparoPrefab, inicioDisparo, Quaternion.Euler(0, 0, -(45 / 3)), contenedorDisparos.transform);
+        disparo = Instantiate(disparoPrefab, inicioDisparo, Quaternion.Euler(0, 0, -(45 / 3)), gameManager.contenedorDisparos.transform);
         disparo.GetComponent<Rigidbody2D>().velocity = new Vector2(-disparoVelocidad, (disparoVelocidad / 3));
     }
 

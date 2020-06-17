@@ -33,7 +33,7 @@ public class Item : MonoBehaviour
         if (fondoImagen)
             velocidadFondo = fondoImagen.velocidadScroll / 6;
         else
-            Debug.Log("falta signar Fondo en editor");
+            Debug.Log("falta asignar Fondo en editor");
     }
 
     // Update is called once per frame
@@ -50,7 +50,7 @@ public class Item : MonoBehaviour
     public void RecogerItem()
     {
         Destroy(gameObject, 0.05f);
-        Instantiate(efectoObtenerItem, transform.position, transform.rotation, GameObject.Find("ContenedorDisparos").gameObject.transform);
+        Instantiate(efectoObtenerItem, transform.position, transform.rotation);
 
     }
 

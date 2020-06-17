@@ -1,7 +1,7 @@
 {
-    "fondo": "fondo_desierto",
+    "fondo": "Sky_Background_1",
     "velocidadFondo": 0.5,
-    "duracionTiempo": 30.0,
+    "duracionTiempo": 5.0,
     "musica": "bensound-happyrock",
     "porcentajePuntosMediaEstrella": 50,
     "porcentajePuntosEstrella": 100,

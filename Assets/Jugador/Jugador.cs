@@ -9,92 +9,80 @@ public enum OrientacionHorizontal
     derecha
 }
 
-
+[RequireComponent(typeof(TouchAndControls))]
 public class Jugador : MonoBehaviour
 {
+    public bool puedeDisparar { get; set; } = true;
+    public bool disparoAutomatico { get; set; } = false;
+    public Animator animator { get; set; }
 
     public Vector2 posicionInicial = new Vector2(-6, 0);
     public GameObject disparador;
     public GameObject disparoPrefab;
     public GameObject explosionPrefab;
-    public GameObject danioPrefab;  
-    public GameObject contenedorDisparos;
+    public GameObject danioPrefab;   
     public float saludInicial = 100f;
-    public float damageChoque = 50f;
-    public int vidas = 5;
-    public bool disparoAutomatico = false;
+    public float damageChoque = 50f;    
     public AudioClip sonidoMuerte;
     public AudioClip sonidoDanio;
     public Item item;
 
-    public int puedeDisparar { get; set; }
+    [SerializeField] int vidas = 5;
 
+    [HideInInspector] public OrientacionHorizontal orientacion = OrientacionHorizontal.derecha;
+    [HideInInspector] public float tiempoUltimoDisparo = 0;
+    [HideInInspector] public float inclinacionMovimiento = 15f;    
+    [HideInInspector] public bool invencible = false;
 
-    [HideInInspector]
-    public OrientacionHorizontal orientacion = OrientacionHorizontal.derecha;
-    [HideInInspector]
-    public float tiempoUltimoDisparo = 0;
-    [HideInInspector]
-    public float inclinacionMovimiento = 15f;    
-    [HideInInspector]
-    public bool invencible = false;
+    [SerializeField] GameManager gameManager;
 
-    GameManager manager;
-    Animator animator;
+    protected float salud;
 
-    protected float health;
-    float xmin;
-    float xmax;
-    float ymin;
-    float ymax;
-    float margenEscenario = 0.4f;
+    float xmin, xmax, ymin, ymax;
+
+    float margenEscenario = 0.5f;
     float ButtonCooler = 0.2f;
     int ButtonCount = 0;
-
-    bool sigueVivo = true;
-    Text textoVidas;
+    bool sigueVivo = true;   
     Slider barraVida;
     SpriteRenderer spriteRender;
     AudioSource audioSource;
-    GameObject botonItem;
-
+    TouchAndControls touchAndControls;
+ 
 
 
     // EVENTOS ---------------------------------------------------------------------------------------------------------------------
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
-        puedeDisparar = 1;
-        botonItem = GameObject.Find("BotonItem");
+        animator = GetComponent<Animator>();        
+        disparador = transform.Find("Disparador").gameObject;
+        barraVida = GameObject.Find("BarraVida").GetComponent<Slider>();
+        audioSource = gameObject.GetComponent<AudioSource>();
+        spriteRender = gameObject.GetComponentInChildren<SpriteRenderer>();
+        touchAndControls = FindObjectOfType<TouchAndControls>();       
 
     }
 
     void Start()
     {
-        disparador = transform.Find("Disparador").gameObject;        
-        manager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        health = saludInicial;
-        textoVidas = GameObject.Find("TextoVidas").GetComponent<Text>();
-        textoVidas.text = vidas.ToString();
-        barraVida = GameObject.Find("BarraVida").GetComponent<Slider>();
-        barraVida.maxValue = health;
-        barraVida.value = health;
+        if (!gameManager)
+        {
+            gameManager = FindObjectOfType<GameManager>();
+        }
+
+        salud = saludInicial;        
+        barraVida.maxValue = salud;
+        barraVida.value = salud;
+        puedeDisparar = true;
 
         float distanciaCamara = transform.position.z - Camera.main.transform.position.z;
 
-        Vector3 extremoIzquierdo = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanciaCamara));
-        Vector3 extremoDerecho = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distanciaCamara));
-        xmin = extremoIzquierdo.x + margenEscenario;
-        xmax = extremoDerecho.x - margenEscenario;
-
-        Vector3 extremoArriba = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanciaCamara));
-        Vector3 extremoAbajo = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, distanciaCamara));
-        ymin = extremoArriba.y + margenEscenario;
-        ymax = extremoAbajo.y - margenEscenario;
-
-        audioSource = gameObject.GetComponent<AudioSource>();
-        spriteRender = gameObject.GetComponentInChildren<SpriteRenderer>();
+        xmin = gameManager.extremoIzquirda.x + margenEscenario;
+        xmax = gameManager.extremoDerecha.x - margenEscenario;
+        ymin = gameManager.extremoAbajo.y + margenEscenario;
+        ymax = gameManager.extremoArriba.y - margenEscenario;
+       
     }
 
 
@@ -155,70 +143,49 @@ public class Jugador : MonoBehaviour
     }
 
 
+    //Eventos llamados desde animaciones -------------------------------------------------------------------------------------------
+    private void AsignarInvencible(int value)
+    {
+        invencible = Convert.ToBoolean(value);
+        if (invencible)
+        {
+            animator.SetBool("GirarEsquivar", false);
+            animator.SetBool("DanioParpadeo", false);
+        }
+    }
+
+    private void AsignarPuedeDisparar(int value)
+    {
+        puedeDisparar = Convert.ToBoolean(value);
+    }
+
+
+
     // METODOS --------------------------------------------------------------------------------------------------------------------------
 
 
+    public int ConsultarVidas()
+    {
+        return vidas;
+    }
 
+    public bool ConsultarSiEstaVivo()
+    {
+        return sigueVivo;
+    }
 
     private void GuardarItem(Item itemVal)
     {
-
-        botonItem.GetComponent<Button>().interactable = true;
+        touchAndControls.botonItem.GetComponent<Button>().interactable = true;
         Sprite spr = itemVal.sprite;
-        botonItem.transform.GetChild(0).GetComponent<Image>().sprite = spr;
+        touchAndControls.botonItem.transform.GetChild(0).GetComponent<Image>().sprite = spr;
         item = itemVal;
 
     }
 
 
-    /// <summary>
-    /// se manda llamar del UI del boton del item
-    /// </summary>
-    public void UsarItem()
+    public void Voltarse()
     {
-        if (botonItem.GetComponent<Button>().interactable)
-        {
-            switch (item.tipoItem)
-            {
-                case TipoItem.fuego:
-                    Vector2 inicioDisparo = new Vector2(disparador.transform.position.x, disparador.transform.position.y);
-                    Instantiate(item.objetoItemDisparo, inicioDisparo, disparador.transform.rotation, contenedorDisparos.transform);
-                    tiempoUltimoDisparo = Time.time;
-                    botonItem.GetComponent<Button>().interactable = false;
-                    botonItem.transform.GetChild(0).GetComponent<Image>().sprite = botonItem.transform.GetChild(0).GetComponent<ItemBoton>().spriteDefault;
-
-                    break;
-                case TipoItem.dinamita:
-                    break;
-                case TipoItem.iman:
-                    break;
-                case TipoItem.regalo:
-                    break;
-                case TipoItem.piedras:
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
-
-
-    private void Voltarse()
-    {
-        // dos comandos para voltear
-        if (Input.GetButtonDown("Voltear"))
-        {
-            if (this.orientacion == OrientacionHorizontal.derecha)
-            {
-                transform.rotation = new Quaternion(0, 1, 0, 0);
-                this.orientacion = OrientacionHorizontal.izquierda;
-            }
-            else
-            {
-                transform.rotation = new Quaternion(0, 0, 0, 0);
-                this.orientacion = OrientacionHorizontal.derecha;
-            }
-        }
         //doble tap media vuelta
         if (Input.GetButtonDown("Horizontal"))
         {
@@ -252,14 +219,14 @@ public class Jugador : MonoBehaviour
 
     public void RecibirDanio(float danio)
     {
-        health -= danio;
-        if (health <= 0)
+        salud -= danio;
+        if (salud <= 0)
         {
             Muere();
         }
         else
         {
-            barraVida.value = health;
+            barraVida.value = salud;
             Instantiate(danioPrefab, transform, false);
             //CameraShaker.Instance.ShakeOnce(4f, 4f, 0.05f, 0.5f);
             audioSource.PlayOneShot(sonidoDanio, 1);
@@ -274,20 +241,19 @@ public class Jugador : MonoBehaviour
         if (sigueVivo)
         {
             sigueVivo = false;
-            vidas--;
-            textoVidas.text = vidas.ToString();
+            vidas--;           
             audioSource.PlayOneShot(sonidoMuerte, 1);
             //CameraShaker.Instance.ShakeOnce(4f, 4f, 0.05f, 0.5f);
             Instantiate(explosionPrefab, transform.position, transform.rotation);
             if (vidas == 0)
             {
                 Destroy(this.gameObject);
-                manager.GameOver();
+                gameManager.GameOver();
             }
             else
             {
-                health = saludInicial;
-                barraVida.value = health;
+                salud = saludInicial;
+                barraVida.value = salud;
                 this.transform.position = posicionInicial;
                 sigueVivo = true;
             }
@@ -295,26 +261,10 @@ public class Jugador : MonoBehaviour
 
     }
 
-    private void AsignarInvencible(int value)
-    {
-        invencible = Convert.ToBoolean(value);
-        if (invencible)
-        {
-            animator.SetBool("GirarEsquivar", false);
-            animator.SetBool("DanioParpadeo", false);
-        }
-
-    }
 
 
-    public void GirarEsquivar() //tambien llamdo desde boton UI para mobil
-    {
-        if (!invencible)
-            animator.SetBool("GirarEsquivar", true);
-    }
 
-    // Corrutinas -----------------------------------------------------------------------------------------------
-
+    // Corrutinas --------------------------------------------------------------------------------------------------------------------
 
 
     private IEnumerator AnimacionDanioBlink()

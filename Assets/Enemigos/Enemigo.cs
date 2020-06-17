@@ -26,8 +26,7 @@ public class Enemigo : MonoBehaviour
 
     protected ScoreKeeper scoreKeeper;
     protected GameManager gameManager;
-    protected HordaManager hordaManager;
-    protected GameObject contenedorDisparos;
+    protected HordaManager hordaManager;   
     protected Material materialOriginal;
     [SerializeField]
     protected Material materialBlanquear;
@@ -42,8 +41,7 @@ public class Enemigo : MonoBehaviour
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        hordaManager = FindObjectOfType<HordaManager>();
-        contenedorDisparos = GameObject.Find("ContenedorDisparos").gameObject;
+        hordaManager = FindObjectOfType<HordaManager>();       
         materialOriginal = gameObject.GetComponentInChildren<SpriteRenderer>().material;
     }
 

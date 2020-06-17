@@ -135,11 +135,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4739927455765260}
   - component: {fileID: 114848745557554826}
-  - component: {fileID: 114914418689366790}
   - component: {fileID: 50344626713873798}
   - component: {fileID: 95517148700140654}
   - component: {fileID: 82004719217042320}
   - component: {fileID: 58280664443512426}
+  - component: {fileID: 1585630459}
   m_Layer: 11
   m_Name: Jugador
   m_TagString: Player
@@ -183,35 +183,17 @@ MonoBehaviour:
     type: 3}
   danioPrefab: {fileID: 1216625836128646, guid: e4a8fa35a10c60d46be1067a6218daa5,
     type: 3}
-  contenedorDisparos: {fileID: 0}
   saludInicial: 100
   damageChoque: 100
-  vidas: 1
-  disparoAutomatico: 0
   sonidoMuerte: {fileID: 8300000, guid: 6731ff3dff6dd1041bea3d257cf4d9ae, type: 3}
   sonidoDanio: {fileID: 8300000, guid: 9958cc2e9e055804ca862a8a534350cb, type: 3}
   item: {fileID: 0}
+  vidas: 2
   orientacion: 1
   tiempoUltimoDisparo: 0
   inclinacionMovimiento: 15
   invencible: 0
---- !u!114 &114914418689366790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887233347763180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b166a02172cad341bc3d85c80d73f24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadStick: 30
-  velocidadMovimiento: 1200
-  velocidadSeguimiento: 10
-  botonPoder: {fileID: 0}
-  botonVoltearse: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!50 &50344626713873798
 Rigidbody2D:
   serializedVersion: 4
@@ -364,3 +346,19 @@ CircleCollider2D:
   m_Offset: {x: -0.012091875, y: 0.007891178}
   serializedVersion: 2
   m_Radius: 0.5879626
+--- !u!114 &1585630459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887233347763180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b166a02172cad341bc3d85c80d73f24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadStick: 10
+  velocidadMovimiento: 20
+  velocidadSeguimiento: 10
+  botonPoder: {fileID: 0}

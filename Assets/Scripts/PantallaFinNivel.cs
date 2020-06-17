@@ -17,9 +17,6 @@ public class PantallaFinNivel : MonoBehaviour
 
     }
 
-
-
-
     public void MostrarPuntos() //llamado desde animtor
     {
         int puntosObtenidos = ScoreKeeper.score;
