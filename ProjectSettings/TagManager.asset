@@ -38,6 +38,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Fondo
+    uniqueID: 2751967639
+    locked: 0
+  - name: Objetosfondo
+    uniqueID: 976987473
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Jugador
+    uniqueID: 1524116125
+    locked: 0
+  - name: Enemigos
+    uniqueID: 3394419965
+    locked: 0
+  - name: EfectosEncima
+    uniqueID: 3853435735
     locked: 0
