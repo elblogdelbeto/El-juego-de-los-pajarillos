@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public Vector3 extremoArriba;
     [HideInInspector]
-    public Vector3 extremoIzquirda;
+    public Vector3 extremoIzquierda;
     [HideInInspector]
     public Vector3 extremoDerecha;
     public int ContadorEnemigosPantalla { get; set; }
@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
 
             float distanciaCamara = transform.position.z - Camera.main.transform.position.z;
                         
-            extremoIzquirda = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanciaCamara));
+            extremoIzquierda = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanciaCamara));
             extremoDerecha = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distanciaCamara));
             extremoAbajo = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanciaCamara));
             extremoArriba = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, distanciaCamara));
@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
 
         }
         else if (gameManager != this)
-        {           
+        {  
             Destroy(gameObject);
         }
 

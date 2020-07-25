@@ -18,8 +18,8 @@ public class NivelCampaniaManager : MonoBehaviour
 
 
     private void Awake()
-    {
-        gameManager = FindObjectOfType<GameManager>();
+    {        
+        gameManager = FindObjectOfType<GameManager>(); 
         fondo = FindObjectOfType<Fondo>();
     }
 
@@ -117,68 +117,65 @@ public class NivelCampaniaManager : MonoBehaviour
 
     }
 
+
+
     private void CorrerNivel(NivelEstructura nivel)
     {
-        //for (int i = enemigosDesplegados; i < nivel.enemigosNivel.Count; i++)
-        //{
-        //    if ((i + gameManager.ContadorEnemigosPantalla - enemigosDesplegados) > gameManager.enemigosMaximosPantalla)
-        //    {
-        //        break;
-        //    }
-        if (enemigosDesplegados < nivel.enemigosNivel.Count)
+        if (Time.timeSinceLevelLoad < nivel.duracionTiempo || enemigosDesplegados < nivel.enemigosNivel.Count)
         {
-            NivelEstructura.EnemigoNivel enem = nivel.enemigosNivel[enemigosDesplegados];
-            if ((Time.timeSinceLevelLoad) >= enem.tiempoAparecer)
+            if (enemigosDesplegados < nivel.enemigosNivel.Count)
             {
-
-                if (!DiccionarioEnemigos.ContainsKey(enem.identificadorEnemigo))
+                NivelEstructura.EnemigoNivel enem = nivel.enemigosNivel[enemigosDesplegados];
+                if ((Time.timeSinceLevelLoad) >= enem.tiempoAparecer)
                 {
-                    var go = Resources.Load<GameObject>(enem.identificadorEnemigo);
-                    if (go == null)
+
+                    if (!DiccionarioEnemigos.ContainsKey(enem.identificadorEnemigo))
                     {
-                        Debug.Log("tried to instantate enemigo " + enem.identificadorEnemigo + ". but it does not exist");
-                        return;
+                        var go = Resources.Load<GameObject>(enem.identificadorEnemigo);
+                        if (go == null)
+                        {
+                            Debug.Log("tried to instantate enemigo " + enem.identificadorEnemigo + ". but it does not exist");
+                            return;
+                        }
+                        DiccionarioEnemigos.Add(enem.identificadorEnemigo, go);
                     }
-                    DiccionarioEnemigos.Add(enem.identificadorEnemigo, go);
+                    Enemigo goEnem = DiccionarioEnemigos[enem.identificadorEnemigo].GetComponent<Enemigo>();
+                    goEnem.inicioAleatorio = enem.inicioAleatorio;
+                    goEnem.reaparecer = enem.reaparecer;
+                    goEnem.lugarAparecerAleatorio = enem.lugarAparecerAleatorio;
+
+                    Vector2 auxLugarAparecer = new Vector2();
+                    switch (enem.lugarAparecer)
+                    {
+                        case LugarAparecer.arriba:
+                            auxLugarAparecer = new Vector2((gameManager.extremoDerecha.x * enem.posicionAparecer.x), (gameManager.extremoArriba.y+1) + enem.posicionAparecer.y);
+                            break;
+                        case LugarAparecer.derecha:
+                            auxLugarAparecer = new Vector2((gameManager.extremoDerecha.x+1) + enem.posicionAparecer.x, (gameManager.extremoDerecha.y * enem.posicionAparecer.y));
+                            break;
+                        case LugarAparecer.abajo:
+                            auxLugarAparecer = new Vector2((gameManager.extremoDerecha.x * enem.posicionAparecer.x), (gameManager.extremoAbajo.y-1) + enem.posicionAparecer.y);
+                            break;
+                        case LugarAparecer.izquierda:
+                            auxLugarAparecer = new Vector2((gameManager.extremoIzquierda.x-1) + enem.posicionAparecer.x, (gameManager.extremoDerecha.y * enem.posicionAparecer.y));
+                            break;
+                        default:
+                            break;
+                    }
+
+                    if (nivel.enemigosNivel[enemigosDesplegados].puntosEnemigo <= 0)
+                        nivel.enemigosNivel[enemigosDesplegados].puntosEnemigo = goEnem.GetComponent<Enemigo>().puntosQueDa;
+
+                    Instantiate(goEnem, auxLugarAparecer, Quaternion.identity, gameManager.contenedorEnemigos.transform);
+                    gameManager.ContadorEnemigosPantalla++;
+                    enemigosDesplegados++;
                 }
-                GameObject goEnem = DiccionarioEnemigos[enem.identificadorEnemigo];
-                goEnem.GetComponent<Enemigo>().inicioAleatorio = enem.inicioAleatorio;
-                goEnem.GetComponent<Enemigo>().reaparecer = enem.reaparecer;
-
-                Vector2 auxLugarAparecer = new Vector2();
-                switch (enem.lugarAparecer)
-                {
-                    case LugarAparecer.arriba:
-                        auxLugarAparecer = new Vector2(enem.posicionAparecer.x, gameManager.extremoArriba.y + enem.posicionAparecer.y);
-                        break;
-                    case LugarAparecer.derecha:
-                        auxLugarAparecer = new Vector2(gameManager.extremoDerecha.x + enem.posicionAparecer.x, enem.posicionAparecer.y);
-                        break;
-                    case LugarAparecer.abajo:
-                        auxLugarAparecer = new Vector2(enem.posicionAparecer.x, gameManager.extremoAbajo.y + enem.posicionAparecer.y);
-                        break;
-                    case LugarAparecer.izquierda:
-                        auxLugarAparecer = new Vector2(gameManager.extremoIzquirda.x + enem.posicionAparecer.x, enem.posicionAparecer.y);
-                        break;
-                    default:
-                        break;
-                }
-
-                if (nivel.enemigosNivel[enemigosDesplegados].puntosEnemigo <= 0)
-                    nivel.enemigosNivel[enemigosDesplegados].puntosEnemigo = goEnem.GetComponent<Enemigo>().puntosQueDa;
-
-                Instantiate(goEnem, auxLugarAparecer, Quaternion.identity, gameManager.contenedorEnemigos.transform);               
-                gameManager.ContadorEnemigosPantalla++;
-                enemigosDesplegados++;
             }
         }
         if (Time.timeSinceLevelLoad > nivel.duracionTiempo && !meta.gameObject.activeSelf)
         {
             meta.transform.position = new Vector3(gameManager.extremoDerecha.x + 3, 0, 0);
             meta.gameObject.SetActive(true);
-
-
-
         }
         
         //}

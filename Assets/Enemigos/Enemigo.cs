@@ -23,6 +23,7 @@ public class Enemigo : MonoBehaviour
     public float tiempoDestruir = 0.05f;
     public bool inicioAleatorio = true;
     public bool reaparecer = false;
+    public LugarAparecer lugarAparecerAleatorio = LugarAparecer.derecha;
 
     protected ScoreKeeper scoreKeeper;
     protected GameManager gameManager;

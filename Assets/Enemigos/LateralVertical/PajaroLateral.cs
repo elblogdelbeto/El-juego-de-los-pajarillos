@@ -36,7 +36,7 @@ public class PajaroLateral : MonoBehaviour
     // This function is called every fixed framerate frame, if the MonoBehaviour is enabled
     private void FixedUpdate()
     {
-        if (transform.position.x < manager.extremoIzquirda.x - 3)
+        if (transform.position.x < manager.extremoIzquierda.x - 3)
         {
             PosicionarEnemigoEnInicio();
         }

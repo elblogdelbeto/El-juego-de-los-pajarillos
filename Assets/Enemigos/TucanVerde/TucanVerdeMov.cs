@@ -32,7 +32,7 @@ public class TucanVerdeMov : MonoBehaviour
     /// </summary>
     void PosicionarEnemigoEnInicio()
     {
-        Vector2 posicionInicial = new Vector2(Random.Range((manager.extremoIzquirda.x + manager.extremoDerecha.x) / 2 + 2, manager.extremoDerecha.x - 1), Random.Range(manager.extremoAbajo.y, manager.extremoArriba.y));
+        Vector2 posicionInicial = new Vector2(Random.Range((manager.extremoIzquierda.x + manager.extremoDerecha.x) / 2 + 2, manager.extremoDerecha.x - 1), Random.Range(manager.extremoAbajo.y, manager.extremoArriba.y));
         transform.position = posicionInicial;
     }
 

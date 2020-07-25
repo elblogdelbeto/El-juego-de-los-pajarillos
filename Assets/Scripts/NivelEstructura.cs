@@ -12,10 +12,11 @@ public class NivelEstructura
     {
         public string identificadorEnemigo;
         public float tiempoAparecer;
-        public bool reaparecer = false;
         public bool inicioAleatorio = true;
         public Vector2 posicionAparecer;
         public LugarAparecer lugarAparecer = LugarAparecer.derecha;
+        public LugarAparecer lugarAparecerAleatorio = LugarAparecer.derecha;
+        public bool reaparecer = false;
         public DificultadEnemigo dificultadEnemigo;
         public float velocidad;
         public float saludEnemigo;
@@ -40,9 +41,16 @@ public class NivelEstructura
 
 public enum LugarAparecer
 {
-    arriba,
-    derecha,
-    abajo,
-    izquierda,
+    arriba, //0
+    derecha,  //1
+    abajo,  //2
+    izquierda,  //3
+    vertical,  //4 
+    horizontal,  //5
+    frente,  //6
+    todo   //7
 }
+
+
+
 

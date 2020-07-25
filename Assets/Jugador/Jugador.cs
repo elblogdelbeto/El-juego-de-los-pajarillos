@@ -78,7 +78,7 @@ public class Jugador : MonoBehaviour
 
         float distanciaCamara = transform.position.z - Camera.main.transform.position.z;
 
-        xmin = gameManager.extremoIzquirda.x + margenEscenario;
+        xmin = gameManager.extremoIzquierda.x + margenEscenario;
         xmax = gameManager.extremoDerecha.x - margenEscenario;
         ymin = gameManager.extremoAbajo.y + margenEscenario;
         ymax = gameManager.extremoArriba.y - margenEscenario;
