@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScoreKeeper : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class ScoreKeeper : MonoBehaviour
     public static int score = 0;
     private Text myText;
     private TextMesh myTextMesh;
+    private TextMeshProUGUI myTechMeshProUGUI;
 
     // Use this for initialization
     void Start()
@@ -16,6 +18,10 @@ public class ScoreKeeper : MonoBehaviour
         if (!myText)
         {
             myTextMesh = GetComponent<TextMesh>();
+        }
+        if (!myTextMesh)
+        {
+            myTechMeshProUGUI = GetComponent<TextMeshProUGUI>();
         }
         // Reset();
         if (myText)
@@ -36,6 +42,10 @@ public class ScoreKeeper : MonoBehaviour
         else if (myTextMesh)
         {
             myTextMesh.text = score.ToString();
+        }
+        else if (myTechMeshProUGUI)
+        {
+            myTechMeshProUGUI.text = score.ToString();
         }
     }
 

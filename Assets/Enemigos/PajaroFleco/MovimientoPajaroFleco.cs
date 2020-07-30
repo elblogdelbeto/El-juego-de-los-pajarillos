@@ -41,7 +41,7 @@ public class MovimientoPajaroFleco : MonoBehaviour
 
     //----------------------METODOS-------------------------------------------
 
-    public void AsignarVelocidad(float val)
+    public void AsignarVelocidad(float val = 0)
     {
         velocidad = val;
         rigidBody.velocity = movimiento * velocidad;

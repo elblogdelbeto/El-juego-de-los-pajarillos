@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: 21300010
     second: pajaritoMoradito_5
+  - first:
+      213: -4219397862665315936
+    second: pajaritoMoradito_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,8 +127,8 @@ TextureImporter:
         y: 403
         width: 291
         height: 214
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,12 +144,12 @@ TextureImporter:
       name: pajaritoMoradito_1
       rect:
         serializedVersion: 2
-        x: 345
-        y: 408
+        x: 342
+        y: 411
         width: 290
         height: 209
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,8 +169,8 @@ TextureImporter:
         y: 409
         width: 293
         height: 210
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,8 +190,8 @@ TextureImporter:
         y: 94
         width: 274
         height: 209
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,8 +211,8 @@ TextureImporter:
         y: 79
         width: 297
         height: 209
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,8 +232,8 @@ TextureImporter:
         y: 84
         width: 291
         height: 212
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,10 +245,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: pajaritoMoradito_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 999
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a99acdcfffa175c0800000000000000
+      internalID: -4219397862665315936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f0ed6d7f31855b7478bf31bee79624f2
     internalID: 0
     vertices: []
     indices: 

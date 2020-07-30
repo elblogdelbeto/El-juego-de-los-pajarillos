@@ -13,9 +13,9 @@ public class NivelEstructura
         public string identificadorEnemigo;
         public float tiempoAparecer;
         public bool inicioAleatorio = true;
-        public Vector2 posicionAparecer;
-        public LugarAparecer lugarAparecer = LugarAparecer.derecha;
         public LugarAparecer lugarAparecerAleatorio = LugarAparecer.derecha;
+        public LugarAparecer lugarAparecer = LugarAparecer.derecha;
+        public Vector2 posicionAparecer;      
         public bool reaparecer = false;
         public DificultadEnemigo dificultadEnemigo;
         public float velocidad;

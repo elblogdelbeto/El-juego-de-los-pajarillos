@@ -5,8 +5,7 @@ using UnityEngine;
 public enum DificultadEnemigo
 {
     facil,
-    normal,
-    dificil
+    normal
 }
 
 
@@ -14,9 +13,11 @@ public enum DificultadEnemigo
 public class Enemigo : MonoBehaviour
 {
 
-    public float health = 150;
+    public float health = 150f;
     public int puntosQueDa = 150;
+    public float velocidad = 10f;
     public AudioClip sonidoMuerte;
+    public DificultadEnemigo dificultadEnemigo;
     public float damageChoque = 20;
     public GameObject explosionPrefab;
     public int valorOcupaPantalla = 1;
@@ -25,25 +26,33 @@ public class Enemigo : MonoBehaviour
     public bool reaparecer = false;
     public LugarAparecer lugarAparecerAleatorio = LugarAparecer.derecha;
 
+    [HideInInspector]
+    public OrientacionHorizontal orientacionHorizontal = OrientacionHorizontal.izquierda;
+
+    [SerializeField]
+    protected Material materialBlanquear;
+
     protected ScoreKeeper scoreKeeper;
     protected GameManager gameManager;
     protected HordaManager hordaManager;   
-    protected Material materialOriginal;
-    [SerializeField]
-    protected Material materialBlanquear;
+    protected Material materialOriginal;    
     protected bool sigueVivo = true;
 
 
     // EVENTOS ----------------------------------------------------------------------------------------------------------
-    //------------------------------------------------------------------------------------------------------------------
+
+    protected void Awake()
+    {
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        hordaManager = FindObjectOfType<HordaManager>();
+        materialOriginal = gameObject.GetComponentInChildren<SpriteRenderer>().material;
+    }
 
 
     protected void Start()
     {
-        scoreKeeper = FindObjectOfType<ScoreKeeper>();
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        hordaManager = FindObjectOfType<HordaManager>();       
-        materialOriginal = gameObject.GetComponentInChildren<SpriteRenderer>().material;
+        
     }
 
 
@@ -72,9 +81,7 @@ public class Enemigo : MonoBehaviour
 
 
     // METODOS ----------------------------------------------------------------------------------------------------------
-    //------------------------------------------------------------------------------------------------------------------
-
-
+   
     public void RecibeDanio(float danio)
     {
         health -= danio;
@@ -119,8 +126,9 @@ public class Enemigo : MonoBehaviour
 
     }
 
+
+
     // CORRUTINAS ----------------------------------------------------------------------------------------------------------
-    //------------------------------------------------------------------------------------------------------------------
 
 
     private IEnumerator AnimacionDanio()

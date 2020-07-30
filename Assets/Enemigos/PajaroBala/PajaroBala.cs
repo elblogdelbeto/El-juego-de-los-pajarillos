@@ -4,9 +4,7 @@
 public class PajaroBala : Enemigo
 {
 
-
-
-    public float velocidad = 3f;
+      
     public float velocidadGiro = 200f;
 
     private Rigidbody2D rigidBody;

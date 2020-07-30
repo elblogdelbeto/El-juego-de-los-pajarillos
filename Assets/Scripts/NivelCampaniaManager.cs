@@ -9,7 +9,7 @@ public class NivelCampaniaManager : MonoBehaviour
     public NivelEstructura nivelEstructura;
     public Meta meta;
 
-    static public int numNivel = 1;
+    static public int numNivel = 0;
 
     GameManager gameManager;
     Fondo fondo;
@@ -138,12 +138,7 @@ public class NivelCampaniaManager : MonoBehaviour
                             return;
                         }
                         DiccionarioEnemigos.Add(enem.identificadorEnemigo, go);
-                    }
-                    Enemigo goEnem = DiccionarioEnemigos[enem.identificadorEnemigo].GetComponent<Enemigo>();
-                    goEnem.inicioAleatorio = enem.inicioAleatorio;
-                    goEnem.reaparecer = enem.reaparecer;
-                    goEnem.lugarAparecerAleatorio = enem.lugarAparecerAleatorio;
-
+                    }                    
                     Vector2 auxLugarAparecer = new Vector2();
                     switch (enem.lugarAparecer)
                     {
@@ -163,10 +158,22 @@ public class NivelCampaniaManager : MonoBehaviour
                             break;
                     }
 
-                    if (nivel.enemigosNivel[enemigosDesplegados].puntosEnemigo <= 0)
-                        nivel.enemigosNivel[enemigosDesplegados].puntosEnemigo = goEnem.GetComponent<Enemigo>().puntosQueDa;
+                    Enemigo enemigoObjetoCargado = DiccionarioEnemigos[enem.identificadorEnemigo].GetComponent<Enemigo>();
+                    if(!enemigoObjetoCargado)
+                        enemigoObjetoCargado = DiccionarioEnemigos[enem.identificadorEnemigo].GetComponentInChildren<Enemigo>();
+                    enemigoObjetoCargado.inicioAleatorio = enem.inicioAleatorio;
+                    enemigoObjetoCargado.reaparecer = enem.reaparecer;
+                    enemigoObjetoCargado.lugarAparecerAleatorio = enem.lugarAparecerAleatorio;                    
+                    enemigoObjetoCargado.velocidad = enem.velocidad > 0 ? enem.velocidad : enemigoObjetoCargado.velocidad;
+                    enemigoObjetoCargado.health = enem.saludEnemigo > 0 ? enem.saludEnemigo : enemigoObjetoCargado.health;                    
+                    enemigoObjetoCargado.dificultadEnemigo = enem.dificultadEnemigo;
+                    if (enem.puntosEnemigo <= 0)
+                        enem.puntosEnemigo = enemigoObjetoCargado.puntosQueDa;
+                    else
+                        enemigoObjetoCargado.puntosQueDa = enem.puntosEnemigo;
+                    
 
-                    Instantiate(goEnem, auxLugarAparecer, Quaternion.identity, gameManager.contenedorEnemigos.transform);
+                    Instantiate(enemigoObjetoCargado, auxLugarAparecer, Quaternion.identity, gameManager.contenedorEnemigos.transform);
                     gameManager.ContadorEnemigosPantalla++;
                     enemigosDesplegados++;
                 }

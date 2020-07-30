@@ -1,114 +1,44 @@
 {
     "fondo": "Sky_Background_1",
     "velocidadFondo": 1.0,
-    "duracionTiempo": 10.0,
+    "duracionTiempo": 20.0,
     "musica": "bensound-happyrock",
     "porcentajePuntosMediaEstrella": 50,
     "porcentajePuntosEstrella": 100,
     "enemigosNivel": [
       {
-        "identificadorEnemigo": "PajaroHuevo",
-        "tiempoAparecer": 2.0,   
-        "inicioAleatorio": true,
-        "posicionAparecer": { "x": 0.0, "y": 0.0 },
-        "lugarAparecer": 0,
-        "lugarAparecerAleatorio": 7,
-        "reaparecer": true,
-        "dificultadEnemigo": 1,
-        "velocidad": 10.0,
-        "saludEnemigo": 100.0,
-        "puntosEnemigo": 10
-      },
+		"identificadorEnemigo": "PajaroBala",
+		"tiempoAparecer": 1
+	  },
       {
         "identificadorEnemigo": "PajaroHuevo",
-        "tiempoAparecer": 2.0,   
+        "tiempoAparecer": 2,   
         "inicioAleatorio": true,
-        "posicionAparecer": { "x": 0.0, "y": 0.0 },
+        "lugarAparecerAleatorio": 6,
         "lugarAparecer": 0,
-        "lugarAparecerAleatorio": 7,
-        "reaparecer": true,
+        "posicionAparecer": { "x": 0.0, "y": 0.0 },        
+        "reaparecer": false,
         "dificultadEnemigo": 1,
-        "velocidad": 10.0,
-        "saludEnemigo": 100.0,
-        "puntosEnemigo": 10
+        "velocidad": 0.5,
+        "saludEnemigo": 500.0,
+        "puntosEnemigo": 3
       },
       {
-        "identificadorEnemigo": "PajaroHuevo",
-        "tiempoAparecer": 2.0,   
+		"identificadorEnemigo": "PajaroLateralVertical",
+		"tiempoAparecer": 5
+	  },
+      {
+        "identificadorEnemigo": "PajaritoFleco",
+        "tiempoAparecer": 7,   
         "inicioAleatorio": true,
-        "posicionAparecer": { "x": 0.0, "y": 0.0 },
+        "lugarAparecerAleatorio": 1,
         "lugarAparecer": 0,
-        "lugarAparecerAleatorio": 7,
+        "posicionAparecer": { "x": 0.0, "y": 0.0 },        
         "reaparecer": true,
         "dificultadEnemigo": 1,
-        "velocidad": 10.0,
-        "saludEnemigo": 100.0,
-        "puntosEnemigo": 10
-      },
-           {
-        "identificadorEnemigo": "PajaroHuevo",
-        "tiempoAparecer": 2.0,   
-        "inicioAleatorio": true,
-        "posicionAparecer": { "x": 0.0, "y": 0.0 },
-        "lugarAparecer": 0,
-        "lugarAparecerAleatorio": 7,
-        "reaparecer": true,
-        "dificultadEnemigo": 1,
-        "velocidad": 10.0,
-        "saludEnemigo": 100.0,
-        "puntosEnemigo": 10
-      },
-           {
-        "identificadorEnemigo": "PajaroHuevo",
-        "tiempoAparecer": 2.0,   
-        "inicioAleatorio": true,
-        "posicionAparecer": { "x": 0.0, "y": 0.0 },
-        "lugarAparecer": 0,
-        "lugarAparecerAleatorio": 7,
-        "reaparecer": true,
-        "dificultadEnemigo": 1,
-        "velocidad": 10.0,
-        "saludEnemigo": 100.0,
-        "puntosEnemigo": 10
-      },
-           {
-        "identificadorEnemigo": "PajaroHuevo",
-        "tiempoAparecer": 2.0,   
-        "inicioAleatorio": true,
-        "posicionAparecer": { "x": 0.0, "y": 0.0 },
-        "lugarAparecer": 0,
-        "lugarAparecerAleatorio": 7,
-        "reaparecer": true,
-        "dificultadEnemigo": 1,
-        "velocidad": 10.0,
-        "saludEnemigo": 100.0,
-        "puntosEnemigo": 10
-      },
-           {
-        "identificadorEnemigo": "PajaroHuevo",
-        "tiempoAparecer": 2.0,   
-        "inicioAleatorio": true,
-        "posicionAparecer": { "x": 0.0, "y": 0.0 },
-        "lugarAparecer": 0,
-        "lugarAparecerAleatorio": 7,
-        "reaparecer": true,
-        "dificultadEnemigo": 1,
-        "velocidad": 10.0,
-        "saludEnemigo": 100.0,
-        "puntosEnemigo": 10
-      },
-     {
-        "identificadorEnemigo": "PajaroHuevo",
-        "tiempoAparecer": 2.0,   
-        "inicioAleatorio": true,
-        "posicionAparecer": { "x": 0.0, "y": 0.0 },
-        "lugarAparecer": 0,
-        "lugarAparecerAleatorio": 7,
-        "reaparecer": true,
-        "dificultadEnemigo": 1,
-        "velocidad": 10.0,
-        "saludEnemigo": 100.0,
-        "puntosEnemigo": 10
+        "velocidad": 0.5,
+        "saludEnemigo": 500.0,
+        "puntosEnemigo": 3
       }
 
     ]
