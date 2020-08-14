@@ -4,20 +4,23 @@ using UnityEngine.UI;
 public class PantallaFinNivel : MonoBehaviour
 {
 
+    [SerializeField] Text textoCantidadPuntos;
+    [SerializeField] Text textoPorcentajePunteria;
+    [SerializeField] Sprite mediaEstrella;
+    [SerializeField] Sprite estrellaCompleta;
+    [SerializeField] NivelCampaniaManager nivelCampaniaManager;
+    [SerializeField] Image estrellaPuntos;
+    [SerializeField] Image estrellaPunteria;
+    [SerializeField] Image estrellaSalud;
 
-    public Text textoCantidadPuntos;
-    public Sprite mediaEstrella;
-    public Sprite estrellaCompleta;
-    public NivelCampaniaManager nivelCampaniaManager;
-    public Image estrellaPuntos;
-
+    ManagerDisparos managerDiaparos;
 
     private void Awake()
     {
-
+        managerDiaparos = FindObjectOfType<ManagerDisparos>();
     }
 
-    public void MostrarPuntos() //llamado desde animtor
+    public void MostrarPuntos() //llamado desde animator
     {
         int puntosObtenidos = ScoreKeeper.score;
         textoCantidadPuntos.text = puntosObtenidos.ToString();
@@ -35,8 +38,38 @@ public class PantallaFinNivel : MonoBehaviour
         {
             estrellaPuntos.sprite = mediaEstrella;
         }
+    }
 
 
+    public void MostrarPunteria() //llamado desde animator
+    {
+        float disparosAcertadosPorcentaje = managerDiaparos.disparosAcertados / managerDiaparos.disparosDesplegados * 100;
+        textoPorcentajePunteria.text = Mathf.Round(disparosAcertadosPorcentaje).ToString() + "%";
+
+        if (disparosAcertadosPorcentaje >= nivelCampaniaManager.nivelEstructura.porcentajePunteriaEstrella)
+        {
+            estrellaPunteria.sprite = estrellaCompleta;
+        }
+        else if (disparosAcertadosPorcentaje >= nivelCampaniaManager.nivelEstructura.porcentajePunteriaMediaEstrella)
+        {
+            estrellaPunteria.sprite = mediaEstrella;
+        }
+    }
+
+    public void MostrarSaludEstrellas() //llamado desde animator
+    {
+        int vidasPerdidas = nivelCampaniaManager.jugador.vidasIniciales - nivelCampaniaManager.jugador.vidas;
+        float disparosAcertadosPorcentaje = managerDiaparos.disparosAcertados / managerDiaparos.disparosDesplegados * 100;
+        textoPorcentajePunteria.text = Mathf.Round(disparosAcertadosPorcentaje).ToString() + "%";
+
+        if (disparosAcertadosPorcentaje >= nivelCampaniaManager.nivelEstructura.porcentajePunteriaEstrella)
+        {
+            estrellaPunteria.sprite = estrellaCompleta;
+        }
+        else if (disparosAcertadosPorcentaje >= nivelCampaniaManager.nivelEstructura.porcentajePunteriaMediaEstrella)
+        {
+            estrellaPunteria.sprite = mediaEstrella;
+        }
     }
 
 }

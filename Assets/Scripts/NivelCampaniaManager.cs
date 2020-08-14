@@ -8,19 +8,22 @@ public class NivelCampaniaManager : MonoBehaviour
     public Slider sliderProgresoNivel;
     public NivelEstructura nivelEstructura;
     public Meta meta;
+    public Jugador jugador;
 
-    static public int numNivel = 0;
+    static public int numNivel = 1;
 
     GameManager gameManager;
     Fondo fondo;
     Dictionary<string, GameObject> DiccionarioEnemigos = new Dictionary<string, GameObject>();
-    int enemigosDesplegados = 0;
+    int enemigosDesplegados = 0;   
+    bool nivelTerminado = false;
 
 
     private void Awake()
     {        
         gameManager = FindObjectOfType<GameManager>(); 
         fondo = FindObjectOfType<Fondo>();
+        jugador = FindObjectOfType<Jugador>();
     }
 
     // Use this for initialization
@@ -36,11 +39,17 @@ public class NivelCampaniaManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CorrerNivel(nivelEstructura);       
+        if (!nivelTerminado)
+            CorrerNivel(nivelEstructura);
+        else //nivel ya terminado
+            jugador.puedeControlarse = false;
+
 
         //actualizar slider en base al tiempo
         if (sliderProgresoNivel.value < sliderProgresoNivel.maxValue)
             sliderProgresoNivel.value = Time.timeSinceLevelLoad;
+
+        
 
     }
 
@@ -50,12 +59,12 @@ public class NivelCampaniaManager : MonoBehaviour
 
     public void TerminarNivel()
     {
-
+        nivelTerminado = true;
     }
 
     private NivelEstructura CargarNivelDesdeArchivo(int nivel)
     {
-        Debug.Log("Cargar Nivel: " + numNivel);
+        Debug.Log("Cargar Nivel: NivelCampania_" + nivel);
 
         #region Ejemplo en codigo de la estructura de un nivel      
             //NivelEstructura.EnemigoNivel level =
@@ -94,7 +103,7 @@ public class NivelCampaniaManager : MonoBehaviour
         #endregion
 
         //USE TextAsset to load data
-        TextAsset txtAsset = (TextAsset)Resources.Load("NivelCampania_" + numNivel, typeof(TextAsset));
+        TextAsset txtAsset = (TextAsset)Resources.Load("NivelCampania_" + nivel, typeof(TextAsset));
         string tileFile = txtAsset.text;
         Debug.Log(tileFile);
         return JsonUtility.FromJson<NivelEstructura>(tileFile);

@@ -1,0 +1,11 @@
+{
+    "fondo": "Sky_Background_1",
+    "velocidadFondo": 1.0,
+    "duracionTiempo": 5.0,
+    "musica": "bensound-happyrock",
+    "porcentajePuntosMediaEstrella": 50,
+    "porcentajePuntosEstrella": 100,
+    "enemigosNivel": [
+     
+    ]
+}

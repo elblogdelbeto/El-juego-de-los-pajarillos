@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class ScoreKeeper : MonoBehaviour
 {
@@ -13,7 +13,6 @@ public class ScoreKeeper : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
         myText = GetComponent<Text>();
         if (!myText)
         {
@@ -28,11 +27,6 @@ public class ScoreKeeper : MonoBehaviour
             myText.text = score.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void Score(int points)
     {

@@ -60,8 +60,7 @@ public class GameManager : MonoBehaviour
     public Vector3 extremoDerecha;
     public int ContadorEnemigosPantalla { get; set; }
     public GameObject contenedorEnemigos;
-    public GameObject contenedorDisparos;
-
+    public ManagerDisparos contenedorDisparos;
     public static ManejadorScenes manejadorScenes;
     public static GameManager gameManager;
 
