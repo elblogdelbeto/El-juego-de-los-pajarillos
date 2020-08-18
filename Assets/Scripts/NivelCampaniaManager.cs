@@ -10,7 +10,8 @@ public class NivelCampaniaManager : MonoBehaviour
     public Meta meta;
     public Jugador jugador;
 
-    static public int numNivel = 1;
+    [SerializeField]
+    static public int numNivel = 0;
 
     GameManager gameManager;
     Fondo fondo;

@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2988bab440ca9854d959f83f16b7780c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puedeControlarse: 1
   posicionInicial: {x: -7, y: 0}
   disparador: {fileID: 1315754790924372}
   disparoPrefab: {fileID: 1792443326308302, guid: d40bd7ae18034054fab0f609bd8c39b0,
@@ -184,11 +185,13 @@ MonoBehaviour:
   danioPrefab: {fileID: 1216625836128646, guid: e4a8fa35a10c60d46be1067a6218daa5,
     type: 3}
   saludInicial: 100
+  salud: 0
+  vidasIniciales: 5
+  vidas: 2
   damageChoque: 100
   sonidoMuerte: {fileID: 8300000, guid: 6731ff3dff6dd1041bea3d257cf4d9ae, type: 3}
   sonidoDanio: {fileID: 8300000, guid: 9958cc2e9e055804ca862a8a534350cb, type: 3}
   item: {fileID: 0}
-  vidas: 2
   orientacion: 1
   tiempoUltimoDisparo: 0
   inclinacionMovimiento: 15

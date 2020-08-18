@@ -7,8 +7,8 @@
     "porcentajePuntosEstrella": 70,
     "porcentajePunteriaMediaEstrella":30,
     "porcentajePunteriaEstrella":60,
-    "porcentajeSaludMediaEstrella":30,
-    "porcentajeSaludEstrella":60,
+    "porcentajeSaludMediaEstrella":-200,
+    "porcentajeSaludEstrella":0,
     "enemigosNivel": [
       {
 		"identificadorEnemigo": "PajaroBala",

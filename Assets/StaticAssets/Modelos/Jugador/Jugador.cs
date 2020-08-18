@@ -88,7 +88,7 @@ public class Jugador : MonoBehaviour
 
 
     // OnTriggerEnter2D is called when the Collider2D other enters the trigger (2D physics only)
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
 
         Item item = collision.gameObject.GetComponentInChildren<Item>();

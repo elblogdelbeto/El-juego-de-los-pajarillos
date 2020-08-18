@@ -53,6 +53,9 @@ TagManager:
   - name: Enemigos
     uniqueID: 3394419965
     locked: 0
+  - name: Disparos
+    uniqueID: 3277449045
+    locked: 0
   - name: EfectosEncima
     uniqueID: 3853435735
     locked: 0

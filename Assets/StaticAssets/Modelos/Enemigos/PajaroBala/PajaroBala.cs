@@ -33,14 +33,13 @@ public class PajaroBala : Enemigo
             rigidBody.angularVelocity = -anguloGirar * velocidadGiro;
             rigidBody.velocity = -transform.right * velocidad;
         }
-
     }
 
 
     // Este tipo de enemigo siempre muere y explota cuando colisiona con jugador
-    new void OnTriggerEnter2D(Collider2D collision)
+    new void OnTriggerStay2D(Collider2D collision)
     {
-        base.OnTriggerEnter2D(collision);
+        base.OnTriggerStay2D(collision);
 
         Jugador jugador = collision.GetComponent<Jugador>();
         if (jugador)

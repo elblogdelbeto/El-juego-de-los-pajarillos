@@ -54,12 +54,12 @@ public class Enemigo : MonoBehaviour
         
     }
 
-
+    
     /// <summary>
     ///  Si colisiona con el jugador o disparo de jugador   
     /// </summary>
     /// <param name="collision">colision de jugador o disparo</param>   
-    protected void OnTriggerEnter2D(Collider2D collision)
+    protected void OnTriggerStay2D(Collider2D collision)
     {
         Disparo disparo = collision.gameObject.GetComponent<Disparo>();
         if (!disparo)
