@@ -21,14 +21,13 @@ public class botonUI : MonoBehaviour
         // Compare selected gameObject with referenced Button gameObject
         if (EventSystem.current.currentSelectedGameObject == this.gameObject && (int)cursor.transform.position.y != (int)this.transform.position.y)
         {
-            Debug.Log(this.gameObject.name + " was selected");
-            cursor.transform.position = new Vector2(cursor.transform.position.x, this.transform.position.y);
+            RectTransform rec = GetComponent<RectTransform>();
+            Vector3[] v = new Vector3[4];
+            rec.GetWorldCorners(v);
+            float CursorPosicionX = v[1].x;
+            cursor.transform.position = new Vector2(CursorPosicionX, this.transform.position.y);
         }
     }
 
-    //Do this when the selectable UI object is selected.
-    public void OnSelect(BaseEventData eventData)
-    {
-        Debug.Log(this.gameObject.name + " entro en OnSelect");
-    }
+
 }
