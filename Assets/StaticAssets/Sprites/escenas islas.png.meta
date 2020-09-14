@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: 49f0c635162791747bd81ffa7ab295bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2920965082809706280
+    second: escenas islas_0
+  - first:
+      213: 6660050935241292383
+    second: escenas islas_1
+  - first:
+      213: -2954575958445451101
+    second: escenas islas_2
+  - first:
+      213: 3580870063475425515
+    second: escenas islas_3
+  - first:
+      213: 6008453426391084412
+    second: escenas islas_4
+  - first:
+      213: 3165855417320525528
+    second: escenas islas_5
+  - first:
+      213: -2397345347069884893
+    second: escenas islas_6
+  - first:
+      213: -418422555246342203
+    second: escenas islas_7
+  - first:
+      213: 3616988478069858261
+    second: escenas islas_8
+  - first:
+      213: 7963577612473691194
+    second: escenas islas_9
+  - first:
+      213: -1128797763379673903
+    second: escenas islas_10
+  - first:
+      213: -6888642397887039136
+    second: escenas islas_11
+  - first:
+      213: 3952011456987087460
+    second: escenas islas_12
+  - first:
+      213: -3858784931843076086
+    second: escenas islas_13
+  - first:
+      213: -5992239724970795304
+    second: escenas islas_0
+  - first:
+      213: -8769915286352837884
+    second: escenas islas_1
+  - first:
+      213: -1881614899907069142
+    second: escenas islas_2
+  - first:
+      213: -8628727311700323484
+    second: escenas islas_3
+  - first:
+      213: 1107878586444550693
+    second: escenas islas_4
+  - first:
+      213: 7014081040757782501
+    second: escenas islas_5
+  - first:
+      213: -450093620133885043
+    second: escenas islas_6
+  - first:
+      213: 3518389509318034255
+    second: escenas islas_7
+  - first:
+      213: 5440998997884377554
+    second: escenas islas_8
+  - first:
+      213: -7523402349343895524
+    second: escenas islas_9
+  - first:
+      213: -2804351726624872711
+    second: escenas islas_10
+  - first:
+      213: -4439058294461054196
+    second: escenas islas_11
+  - first:
+      213: -1686498288092425479
+    second: escenas islas_12
+  - first:
+      213: -4233138315279101618
+    second: escenas islas_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: escenas islas_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 498
+        width: 173
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de9128e7b947dca0800000000000000
+      internalID: -5992239724970795304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escenas islas_1
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 498
+        width: 173
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403cba613800b4680800000000000000
+      internalID: -8769915286352837884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escenas islas_2
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 498
+        width: 159
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bf4feb73923e5e0800000000000000
+      internalID: -1881614899907069142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escenas islas_3
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 498
+        width: 173
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463146a1a3a904880800000000000000
+      internalID: -8628727311700323484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escenas islas_4
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 264
+        width: 161
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5221a4f54b9ff5f00800000000000000
+      internalID: 1107878586444550693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escenas islas_5
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 264
+        width: 181
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e77b2c5b85075160800000000000000
+      internalID: 7014081040757782501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escenas islas_6
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 264
+        width: 173
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b0048bc32f0c9f0800000000000000
+      internalID: -450093620133885043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escenas islas_7
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 264
+        width: 173
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43cc541e94d3d030800000000000000
+      internalID: 3518389509318034255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escenas islas_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 27
+        width: 173
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9972cc2cf428b40800000000000000
+      internalID: 5440998997884377554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escenas islas_9
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 27
+        width: 159
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1094098c61879790800000000000000
+      internalID: -7523402349343895524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escenas islas_10
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 27
+        width: 175
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6654576f0f419d0800000000000000
+      internalID: -2804351726624872711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escenas islas_12
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 27
+        width: 160
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f252ff0eba5898e0800000000000000
+      internalID: -1686498288092425479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
