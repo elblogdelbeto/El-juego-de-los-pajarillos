@@ -4,16 +4,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+/// <summary>
+/// Colocar un cursor en el elemento UI seleccionado que tenga este script
+/// </summary>
 public class botonUI : MonoBehaviour
 {
 
     public GameObject cursor;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
 
     // Update is called once per frame
     void Update()

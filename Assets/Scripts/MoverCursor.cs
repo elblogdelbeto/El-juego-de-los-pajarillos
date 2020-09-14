@@ -7,22 +7,12 @@ using UnityEngine.UI;
 public class MoverCursor : MonoBehaviour
 {
     [SerializeField] EventSystem eventSystem;
-    [SerializeField] Button botonArriba;
-    [SerializeField] Button botonAbajo;
     Button ultimoBotonSeleccionado;
     [SerializeField] Button volumenSonidoBoton;
     [SerializeField] Slider volumenSonidoSlider;
-
-
     private float tiempo = 0.0F;
     private float tiempoSiguiente = 0.3F;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {        
-    }
-
+     
     // Update is called once per frame
     void Update()
     {
