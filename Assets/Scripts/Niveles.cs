@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Niveles : MonoBehaviour
 {
@@ -56,12 +57,12 @@ public class Niveles : MonoBehaviour
             //draw stats depends on how much stars we gained;
             if (listaNiveles[i].desbloqueado)
             {
-                listaNiveles[i].objetoNivel.sprite = nivelDesbloquedo;
+                listaNiveles[i].imagenNivel.sprite = nivelDesbloquedo;
                 //listaNiveles[i].objetoNivel.gameObject.SetActive(true);
 
-                if (listaNiveles[i].estrellas == 1) listaNiveles[i].objetoEstrellas.sprite = unaEstrella;
-                if (listaNiveles[i].estrellas == 2) listaNiveles[i].objetoEstrellas.sprite = dosEstrellas;
-                if (listaNiveles[i].estrellas == 3) listaNiveles[i].objetoEstrellas.sprite = tresEstrellas;
+                if (listaNiveles[i].estrellas == 1) listaNiveles[i].imagenEstrellas.sprite = unaEstrella;
+                if (listaNiveles[i].estrellas == 2) listaNiveles[i].imagenEstrellas.sprite = dosEstrellas;
+                if (listaNiveles[i].estrellas == 3) listaNiveles[i].imagenEstrellas.sprite = tresEstrellas;
             }
             else
             {
@@ -88,6 +89,8 @@ public class NivelGUI
 {
     public SpriteRenderer objetoNivel;
     public SpriteRenderer objetoEstrellas;
+    public Image imagenNivel;
+    public Image imagenEstrellas;
     public int idNivel;
     public bool desbloqueado;
     public int estrellas;
