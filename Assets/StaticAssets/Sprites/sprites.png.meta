@@ -59,6 +59,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -67,9 +69,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: 1
-    mipBias: -100
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -90,9 +92,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
@@ -384,6 +389,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      stats: 21300012
+      stone_grey: 21300014
+      level_locked: 21300000
+      tree: 21300008
+      path: 21300004
+      background: 21300018
+      star2: 21300020
+      star1: 21300016
+      star3: 21300022
+      path_end: 21300006
+      level_unlocked: 21300002
+      stone_red: 21300010
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

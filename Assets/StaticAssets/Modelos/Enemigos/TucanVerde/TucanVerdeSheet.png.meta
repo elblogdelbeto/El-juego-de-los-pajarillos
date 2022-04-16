@@ -53,6 +53,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -61,9 +63,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -84,9 +86,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
@@ -306,6 +311,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      TucanVerdeSheet_2: 21300004
+      TucanVerdeSheet_4: 21300008
+      TucanVerdeSheet_5: 21300010
+      TucanVerdeSheet_8: 21300016
+      TucanVerdeSheet_7: 21300014
+      TucanVerdeSheet_1: 21300002
+      TucanVerdeSheet_0: 21300000
+      TucanVerdeSheet_6: 21300012
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

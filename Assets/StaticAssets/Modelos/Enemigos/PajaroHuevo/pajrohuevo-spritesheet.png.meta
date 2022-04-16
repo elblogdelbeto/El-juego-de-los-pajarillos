@@ -65,6 +65,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -73,9 +75,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -96,9 +98,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
@@ -444,6 +449,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      pajrohuevo-spritesheet_6: 21300012
+      pajrohuevo-spritesheet_7: 21300014
+      pajrohuevo-spritesheet_11: 21300022
+      pajrohuevo-spritesheet_8: 21300016
+      pajrohuevo-spritesheet_1: 21300002
+      pajrohuevo-spritesheet_13: 21300026
+      pajrohuevo-spritesheet_4: 21300008
+      pajrohuevo-spritesheet_5: 21300010
+      pajrohuevo-spritesheet_9: 21300018
+      pajrohuevo-spritesheet_10: 21300020
+      pajrohuevo-spritesheet_2: 21300004
+      pajrohuevo-spritesheet_3: 21300006
+      pajrohuevo-spritesheet_12: 21300024
+      pajrohuevo-spritesheet_0: 21300000
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

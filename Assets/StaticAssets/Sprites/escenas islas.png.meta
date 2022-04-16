@@ -107,6 +107,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -115,9 +117,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -138,9 +140,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -198,7 +203,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8de9128e7b947dca0800000000000000
-      internalID: -5992239724970795304
+      internalID: 2920965082809706280
       vertices: []
       indices: 
       edges: []
@@ -219,7 +224,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 403cba613800b4680800000000000000
-      internalID: -8769915286352837884
+      internalID: 6660050935241292383
       vertices: []
       indices: 
       edges: []
@@ -240,7 +245,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a2bf4feb73923e5e0800000000000000
-      internalID: -1881614899907069142
+      internalID: -2954575958445451101
       vertices: []
       indices: 
       edges: []
@@ -261,7 +266,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 463146a1a3a904880800000000000000
-      internalID: -8628727311700323484
+      internalID: 3580870063475425515
       vertices: []
       indices: 
       edges: []
@@ -282,7 +287,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5221a4f54b9ff5f00800000000000000
-      internalID: 1107878586444550693
+      internalID: 6008453426391084412
       vertices: []
       indices: 
       edges: []
@@ -303,7 +308,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5e77b2c5b85075160800000000000000
-      internalID: 7014081040757782501
+      internalID: 3165855417320525528
       vertices: []
       indices: 
       edges: []
@@ -324,7 +329,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d8b0048bc32f0c9f0800000000000000
-      internalID: -450093620133885043
+      internalID: -2397345347069884893
       vertices: []
       indices: 
       edges: []
@@ -345,7 +350,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f43cc541e94d3d030800000000000000
-      internalID: 3518389509318034255
+      internalID: -418422555246342203
       vertices: []
       indices: 
       edges: []
@@ -366,7 +371,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2d9972cc2cf428b40800000000000000
-      internalID: 5440998997884377554
+      internalID: 3616988478069858261
       vertices: []
       indices: 
       edges: []
@@ -387,7 +392,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c1094098c61879790800000000000000
-      internalID: -7523402349343895524
+      internalID: 7963577612473691194
       vertices: []
       indices: 
       edges: []
@@ -408,7 +413,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9f6654576f0f419d0800000000000000
-      internalID: -2804351726624872711
+      internalID: -1128797763379673903
       vertices: []
       indices: 
       edges: []
@@ -429,7 +434,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9f252ff0eba5898e0800000000000000
-      internalID: -1686498288092425479
+      internalID: 3952011456987087460
       vertices: []
       indices: 
       edges: []
@@ -444,6 +449,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      escenas islas_6: -2397345347069884893
+      escenas islas_2: -2954575958445451101
+      escenas islas_1: 6660050935241292383
+      escenas islas_3: 3580870063475425515
+      escenas islas_9: 7963577612473691194
+      escenas islas_0: 2920965082809706280
+      escenas islas_5: 3165855417320525528
+      escenas islas_4: 6008453426391084412
+      escenas islas_7: -418422555246342203
+      escenas islas_10: -1128797763379673903
+      escenas islas_12: 3952011456987087460
+      escenas islas_8: 3616988478069858261
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -83,6 +83,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -91,9 +93,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -114,9 +116,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
@@ -588,6 +593,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Elements_Aqua2_2: 6557457427239030879
+      Elements_Aqua2_7: -1863416725015978918
+      Elements_Aqua2_16: 7168907050880404644
+      Elements_Aqua2_9: -1796579163927751716
+      Elements_Aqua2_11: 6548191731900999135
+      Elements_Aqua2_8: 1229195022178684652
+      Elements_Aqua2_18: 8397687325328216115
+      Elements_Aqua2_12: 4729420297974295895
+      Elements_Aqua2_1: -6910482764040111220
+      Elements_Aqua2_3: -7475141974085597366
+      Elements_Aqua2_5: 3587848471843184358
+      Elements_Aqua2_0: -1864675556079806675
+      Elements_Aqua2_10: -7251411248624631005
+      Elements_Aqua2_4: 6041276982882693523
+      Elements_Aqua2_13: -5174783730793571329
+      Elements_Aqua2_17: -9059701909480227968
+      Elements_Aqua2_19: -3606005055317509416
+      Elements_Aqua2_14: 8661310217272338590
+      Elements_Aqua2_6: -8057731406841128593
+      Elements_Aqua2_15: -6811330228235474624
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

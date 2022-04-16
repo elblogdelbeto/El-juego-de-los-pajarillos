@@ -623,6 +623,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -631,9 +633,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -654,9 +656,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
@@ -4908,6 +4913,207 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Buttons_Icons_Aqua_140: 6122569601942607139
+      Buttons_Icons_Aqua_103: -8003522048400876800
+      Buttons_Icons_Aqua_157: 6152405112560665270
+      Buttons_Icons_Aqua_175: -7893840316935105434
+      Buttons_Icons_Aqua_72: -2806533621195261072
+      Buttons_Icons_Aqua_89: -1529088199185810303
+      Buttons_Icons_Aqua_193: -1972308373650080407
+      Buttons_Icons_Aqua_191: -7543513447878797416
+      Buttons_Icons_Aqua_52: 4921242089290952224
+      Buttons_Icons_Aqua_18: -4503974494306995615
+      Buttons_Icons_Aqua_129: -4179430412689162101
+      Buttons_Icons_Aqua_192: 7466288031997114711
+      Buttons_Icons_Aqua_154: -468627978054488608
+      Buttons_Icons_Aqua_44: 8059942871821084909
+      Buttons_Icons_Aqua_136: -3975032398662724042
+      Buttons_Icons_Aqua_99: -2802054534810229564
+      Buttons_Icons_Aqua_177: -8669154275488001112
+      Buttons_Icons_Aqua_95: 7944483350763445669
+      Buttons_Icons_Aqua_0: -3629972532819793832
+      Buttons_Icons_Aqua_8: 6831647372931045841
+      Buttons_Icons_Aqua_70: 3718483081041798529
+      Buttons_Icons_Aqua_28: -8700078584924080117
+      Buttons_Icons_Aqua_87: -8275958966534589722
+      Buttons_Icons_Aqua_198: -3236938352354264300
+      Buttons_Icons_Aqua_179: -4398870423943218827
+      Buttons_Icons_Aqua_14: -7068019597490305453
+      Buttons_Icons_Aqua_125: -2559492923358289962
+      Buttons_Icons_Aqua_116: -2242957379349166195
+      Buttons_Icons_Aqua_156: -5771300989280373947
+      Buttons_Icons_Aqua_5: 8194632151947579483
+      Buttons_Icons_Aqua_60: -4900317650176126430
+      Buttons_Icons_Aqua_36: -2941578771740484292
+      Buttons_Icons_Aqua_168: -7414529647395006947
+      Buttons_Icons_Aqua_107: -8363528841503755774
+      Buttons_Icons_Aqua_40: -3805294072170438385
+      Buttons_Icons_Aqua_143: -5976287319541517565
+      Buttons_Icons_Aqua_58: 4333828824999521183
+      Buttons_Icons_Aqua_3: 2177792197276732239
+      Buttons_Icons_Aqua_97: 1762666264345931911
+      Buttons_Icons_Aqua_121: -346509228374829756
+      Buttons_Icons_Aqua_120: -2089766652888543147
+      Buttons_Icons_Aqua_139: 5249970342321776664
+      Buttons_Icons_Aqua_93: -5840949541671933074
+      Buttons_Icons_Aqua_181: 157928261259837473
+      Buttons_Icons_Aqua_183: -4322381297839506017
+      Buttons_Icons_Aqua_186: 8164823372386902858
+      Buttons_Icons_Aqua_188: -968240489143050672
+      Buttons_Icons_Aqua_134: 5594383717735148677
+      Buttons_Icons_Aqua_174: -3032985541036315435
+      Buttons_Icons_Aqua_22: -2862302949130778707
+      Buttons_Icons_Aqua_43: 1220704937976533207
+      Buttons_Icons_Aqua_23: -5438047957165676004
+      Buttons_Icons_Aqua_194: 229630046643614598
+      Buttons_Icons_Aqua_51: 7886196556402281270
+      Buttons_Icons_Aqua_146: -974293131754962874
+      Buttons_Icons_Aqua_161: -4660033499394799342
+      Buttons_Icons_Aqua_66: -8816867495699384734
+      Buttons_Icons_Aqua_133: -1399447811765359519
+      Buttons_Icons_Aqua_196: 7021531318352107167
+      Buttons_Icons_Aqua_152: -6484413816481259030
+      Buttons_Icons_Aqua_39: 5044204062316443931
+      Buttons_Icons_Aqua_48: 8359560549160624933
+      Buttons_Icons_Aqua_67: -7796310585635714236
+      Buttons_Icons_Aqua_82: 5368209013942242197
+      Buttons_Icons_Aqua_109: 882062085398661550
+      Buttons_Icons_Aqua_151: 4644838797329841375
+      Buttons_Icons_Aqua_124: -6873388403860890532
+      Buttons_Icons_Aqua_91: -8590496090739076086
+      Buttons_Icons_Aqua_111: -2609892628465022989
+      Buttons_Icons_Aqua_37: 7878236804577611994
+      Buttons_Icons_Aqua_173: 3294732783565241721
+      Buttons_Icons_Aqua_24: -2546841668722719501
+      Buttons_Icons_Aqua_155: -7430538653969056150
+      Buttons_Icons_Aqua_132: 5375849965834401563
+      Buttons_Icons_Aqua_73: -2995285171545736563
+      Buttons_Icons_Aqua_112: -7714410546723276994
+      Buttons_Icons_Aqua_81: -2796094145468610383
+      Buttons_Icons_Aqua_79: -6794378272612916095
+      Buttons_Icons_Aqua_108: 7013602461789501959
+      Buttons_Icons_Aqua_96: 7381032423748520249
+      Buttons_Icons_Aqua_21: -2424381946032268732
+      Buttons_Icons_Aqua_106: 5411655581758121601
+      Buttons_Icons_Aqua_117: -7949338297839520260
+      Buttons_Icons_Aqua_104: -132409888532711870
+      Buttons_Icons_Aqua_158: -9111016876793284594
+      Buttons_Icons_Aqua_185: 8160648048368890027
+      Buttons_Icons_Aqua_65: 3713652609998137356
+      Buttons_Icons_Aqua_141: -5284132791946865025
+      Buttons_Icons_Aqua_75: -4888163131620550976
+      Buttons_Icons_Aqua_165: 111740300006265309
+      Buttons_Icons_Aqua_78: -1114498076735812932
+      Buttons_Icons_Aqua_68: 7971710519145655177
+      Buttons_Icons_Aqua_64: 5308475270783551834
+      Buttons_Icons_Aqua_94: 2839119215169038249
+      Buttons_Icons_Aqua_159: -5263326281666989260
+      Buttons_Icons_Aqua_27: 3078511111078870057
+      Buttons_Icons_Aqua_92: 4673300076504232650
+      Buttons_Icons_Aqua_17: -53499168036017136
+      Buttons_Icons_Aqua_29: -4627402245299220868
+      Buttons_Icons_Aqua_199: -6806018457082365423
+      Buttons_Icons_Aqua_1: 1496435006953161222
+      Buttons_Icons_Aqua_49: 7679738581217593108
+      Buttons_Icons_Aqua_105: -7607969764970097154
+      Buttons_Icons_Aqua_6: 4600474366189657738
+      Buttons_Icons_Aqua_148: 6859047573715519704
+      Buttons_Icons_Aqua_56: -5829691335097720083
+      Buttons_Icons_Aqua_50: -8051579371173884597
+      Buttons_Icons_Aqua_12: -6572443326881634964
+      Buttons_Icons_Aqua_88: -5230609613156938758
+      Buttons_Icons_Aqua_71: -3952234323692730831
+      Buttons_Icons_Aqua_184: -7071786465641431392
+      Buttons_Icons_Aqua_131: -9040438278281104947
+      Buttons_Icons_Aqua_163: 5320861945889773233
+      Buttons_Icons_Aqua_15: 5854010309944131803
+      Buttons_Icons_Aqua_126: 7238219415210520081
+      Buttons_Icons_Aqua_85: -4365181327448893148
+      Buttons_Icons_Aqua_164: 258499226919873118
+      Buttons_Icons_Aqua_182: 2624443739405115784
+      Buttons_Icons_Aqua_34: -5589335630572883647
+      Buttons_Icons_Aqua_74: 3718630925297993529
+      Buttons_Icons_Aqua_115: -8285672679910156064
+      Buttons_Icons_Aqua_20: 4154056599765663024
+      Buttons_Icons_Aqua_54: 5869962809456019918
+      Buttons_Icons_Aqua_102: -956173197255175753
+      Buttons_Icons_Aqua_149: -1060291292807706838
+      Buttons_Icons_Aqua_30: -5663216436803750792
+      Buttons_Icons_Aqua_127: 4904649028772645579
+      Buttons_Icons_Aqua_19: -2046806273376448784
+      Buttons_Icons_Aqua_7: 8647755967816654121
+      Buttons_Icons_Aqua_187: -5539388054759428319
+      Buttons_Icons_Aqua_166: 7369027046335775999
+      Buttons_Icons_Aqua_162: 1794795864307019163
+      Buttons_Icons_Aqua_90: -1309394936485234317
+      Buttons_Icons_Aqua_55: -1684410988713846898
+      Buttons_Icons_Aqua_145: -97900005059523233
+      Buttons_Icons_Aqua_167: -816548014584206979
+      Buttons_Icons_Aqua_41: -5170218704909113662
+      Buttons_Icons_Aqua_16: 7192250405851295824
+      Buttons_Icons_Aqua_4: 3458074456323454159
+      Buttons_Icons_Aqua_170: -2584814837206489607
+      Buttons_Icons_Aqua_33: 5345372943933679352
+      Buttons_Icons_Aqua_26: 4310157932141692893
+      Buttons_Icons_Aqua_86: 4188618580008809141
+      Buttons_Icons_Aqua_35: 2840374356833016880
+      Buttons_Icons_Aqua_38: 8208813719205034815
+      Buttons_Icons_Aqua_98: 8625864086039923118
+      Buttons_Icons_Aqua_57: 8972310118528932666
+      Buttons_Icons_Aqua_77: 7801312839743850352
+      Buttons_Icons_Aqua_189: 1671500497167169350
+      Buttons_Icons_Aqua_180: 4741002348461429084
+      Buttons_Icons_Aqua_9: 4289468319347160932
+      Buttons_Icons_Aqua_160: 5576381780595074388
+      Buttons_Icons_Aqua_13: 7564522914735747535
+      Buttons_Icons_Aqua_110: 3720288385275473636
+      Buttons_Icons_Aqua_25: -5742288598954665731
+      Buttons_Icons_Aqua_190: -4966607792694683099
+      Buttons_Icons_Aqua_53: -9027153237469736991
+      Buttons_Icons_Aqua_118: 5036190538975404642
+      Buttons_Icons_Aqua_144: 1063030530514138789
+      Buttons_Icons_Aqua_195: -7577355054438317448
+      Buttons_Icons_Aqua_101: 3752042066557763367
+      Buttons_Icons_Aqua_59: 1260613970137175292
+      Buttons_Icons_Aqua_83: -3994678065542215209
+      Buttons_Icons_Aqua_137: 5646095168359208176
+      Buttons_Icons_Aqua_169: 4035136590007006152
+      Buttons_Icons_Aqua_138: -6294436269318712981
+      Buttons_Icons_Aqua_153: 3232621386621518228
+      Buttons_Icons_Aqua_142: -7825991444790038934
+      Buttons_Icons_Aqua_47: 8413186405179973147
+      Buttons_Icons_Aqua_69: -8451083011362096843
+      Buttons_Icons_Aqua_32: 7393332171240046957
+      Buttons_Icons_Aqua_147: -4608688185325239775
+      Buttons_Icons_Aqua_172: 3714879215197091606
+      Buttons_Icons_Aqua_119: -5685331407915652796
+      Buttons_Icons_Aqua_150: -1000980350110834297
+      Buttons_Icons_Aqua_130: -1451926368470000040
+      Buttons_Icons_Aqua_45: -8118320586328485837
+      Buttons_Icons_Aqua_197: 6609409643594625631
+      Buttons_Icons_Aqua_11: -4328950151018980362
+      Buttons_Icons_Aqua_42: 7807678828171474892
+      Buttons_Icons_Aqua_122: -536803958538404686
+      Buttons_Icons_Aqua_63: -5578628160627029182
+      Buttons_Icons_Aqua_123: -8688171494060352819
+      Buttons_Icons_Aqua_31: 5737727753108337773
+      Buttons_Icons_Aqua_113: 4800820035425616900
+      Buttons_Icons_Aqua_135: 5473836079713385213
+      Buttons_Icons_Aqua_114: 3707319788306913200
+      Buttons_Icons_Aqua_100: -5826334914367549099
+      Buttons_Icons_Aqua_61: -396804043909607287
+      Buttons_Icons_Aqua_80: -2732076673648097690
+      Buttons_Icons_Aqua_2: 2419460999511552480
+      Buttons_Icons_Aqua_62: -6546496396385437455
+      Buttons_Icons_Aqua_46: 1920285304545810608
+      Buttons_Icons_Aqua_10: 6440926336795619425
+      Buttons_Icons_Aqua_178: 7224204541612642756
+      Buttons_Icons_Aqua_176: -88640129374671175
+      Buttons_Icons_Aqua_76: 2785731058850512143
+      Buttons_Icons_Aqua_84: 8674050086610749664
+      Buttons_Icons_Aqua_128: 2898055006311098057
+      Buttons_Icons_Aqua_171: -1974256817350208808
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
