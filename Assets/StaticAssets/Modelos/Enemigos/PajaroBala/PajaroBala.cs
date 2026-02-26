@@ -31,7 +31,7 @@ public class PajaroBala : Enemigo
             direccion.Normalize();
             float anguloGirar = Vector3.Cross(direccion, -transform.right).z;
             rigidBody.angularVelocity = -anguloGirar * velocidadGiro;
-            rigidBody.velocity = -transform.right * velocidad;
+            rigidBody.linearVelocity = -transform.right * velocidad;
         }
     }
 

@@ -29,9 +29,9 @@ public class ItemMisil : MonoBehaviour
         if (Y > 180)
             Y = Y - 360;
         if (orientacion == OrientacionHorizontal.derecha)
-            GetComponentInChildren<Rigidbody2D>().velocity = new Vector2(disparo.disparoVelocidad, Y / 5);
+            GetComponentInChildren<Rigidbody2D>().linearVelocity = new Vector2(disparo.disparoVelocidad, Y / 5);
         else
-            GetComponentInChildren<Rigidbody2D>().velocity = new Vector2(disparo.disparoVelocidad * -1, Y / 5);
+            GetComponentInChildren<Rigidbody2D>().linearVelocity = new Vector2(disparo.disparoVelocidad * -1, Y / 5);
     }
 
 

@@ -92,7 +92,7 @@ public class PatoRedondoMov : MonoBehaviour
     public void AsignarVelocidad(float val)
     {
         velocidad = val;
-        rigidBody.velocity = movimiento * velocidad;
+        rigidBody.linearVelocity = movimiento * velocidad;
     }
 
 

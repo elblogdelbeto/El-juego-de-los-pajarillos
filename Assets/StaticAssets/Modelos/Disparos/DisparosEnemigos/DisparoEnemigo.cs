@@ -42,6 +42,6 @@ public class DisparoEnemigo : MonoBehaviour
         AudioSource.PlayClipAtPoint(sonidoDisparo, transform.position);
         Vector2 inicioDisparo = new Vector2(transform.position.x, transform.position.y);
         GameObject disparo = Instantiate(disparoPrefab, inicioDisparo, Quaternion.identity);
-        disparo.GetComponent<Rigidbody2D>().velocity = new Vector2(-disparoVelocidad, 0);
+        disparo.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(-disparoVelocidad, 0);
     }
 }

@@ -152,13 +152,13 @@ public class Aparecer : MonoBehaviour
             {
                 //Inicia con una velocidad más rapida mientras mas lejos aparezca del jugador
                 linearVelocity = (jugadorObjetivo.transform.position - transform.position);
-                rigidBody.velocity = linearVelocity * (enemigo.velocidad / 10);
+                rigidBody.linearVelocity = linearVelocity * (enemigo.velocidad / 10);
             }
             else
             {
                 linearVelocity = (jugadorObjetivo.transform.position - transform.position);
                 linearVelocity.Normalize();
-                rigidBody.velocity = linearVelocity * enemigo.velocidad;
+                rigidBody.linearVelocity = linearVelocity * enemigo.velocidad;
             }
         }
         else
@@ -166,12 +166,12 @@ public class Aparecer : MonoBehaviour
             if (enemigo.orientacionHorizontal == OrientacionHorizontal.izquierda)
             {
                 linearVelocity = -transform.right;
-                rigidBody.velocity = linearVelocity * enemigo.velocidad;
+                rigidBody.linearVelocity = linearVelocity * enemigo.velocidad;
             }
             else
             {
                 linearVelocity = transform.right;
-                rigidBody.velocity = linearVelocity * enemigo.velocidad;
+                rigidBody.linearVelocity = linearVelocity * enemigo.velocidad;
             }
 
         }
@@ -210,7 +210,7 @@ public class Aparecer : MonoBehaviour
     public void AsignarVelocidad(float val = 0)
     {
         enemigo.velocidad = val;
-        rigidBody.velocity = linearVelocity * enemigo.velocidad;
+        rigidBody.linearVelocity = linearVelocity * enemigo.velocidad;
     }
 
 }

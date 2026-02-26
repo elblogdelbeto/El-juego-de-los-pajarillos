@@ -51,7 +51,7 @@ public class TouchAndControls : MonoBehaviour
     {
         if (!jugador.puedeControlarse)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 0);
             gameObject.GetComponent<Transform>().rotation = Quaternion.Euler(0, 0, 0);
         }
 
@@ -154,7 +154,7 @@ public class TouchAndControls : MonoBehaviour
 
     void MovimientoTouchAplicandoFisica()
     {
-        rb2D.velocity = ((finVec - inicioVec) / maxResolucion) * velocidadMovimiento;
+        rb2D.linearVelocity = ((finVec - inicioVec) / maxResolucion) * velocidadMovimiento;
         inicioVec = touch.position;
         finVec = touch.position;
     }
@@ -167,7 +167,7 @@ public class TouchAndControls : MonoBehaviour
         float moverHorizontal = Input.GetAxis("Horizontal");
         float moverVertical = Input.GetAxis("Vertical");
         Vector2 movimiento = new Vector2(moverHorizontal, moverVertical);
-        GetComponent<Rigidbody2D>().velocity = movimiento * velocidadStick;
+        GetComponent<Rigidbody2D>().linearVelocity = movimiento * velocidadStick;
 
         float anguloZ = 0;
 

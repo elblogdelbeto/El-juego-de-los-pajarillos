@@ -24,9 +24,9 @@ public class LaserRojo : Disparo
         if (Y > 180)
             Y = Y - 360;
         if (orientacion == OrientacionHorizontal.derecha)
-            GetComponent<Rigidbody2D>().velocity = new Vector2(disparoVelocidad, Y / 5);
+            GetComponent<Rigidbody2D>().linearVelocity = new Vector2(disparoVelocidad, Y / 5);
         else
-            this.GetComponent<Rigidbody2D>().velocity = new Vector2(disparoVelocidad * -1, Y / 5);
+            this.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(disparoVelocidad * -1, Y / 5);
     }
 
 
