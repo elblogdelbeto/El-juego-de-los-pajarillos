@@ -23,12 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503590831}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4747252388515990}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2127042926
 GameObject:
@@ -39,6 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2127042927}
+  - component: {fileID: 7404572967278108278}
   m_Layer: 0
   m_Name: ContenedorDisparos
   m_TagString: Untagged
@@ -53,13 +55,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127042926}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4747252388515990}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7404572967278108278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127042926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e0157e5785a19418f1708c59790005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1139391473812146
 GameObject:
   m_ObjectHideFlags: 0
@@ -85,14 +100,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139391473812146}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2127042927}
   - {fileID: 503590832}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114065017093585526
 MonoBehaviour:
@@ -112,10 +128,10 @@ MonoBehaviour:
   frames: 60
   extremoAbajo: {x: 0, y: 0, z: 0}
   extremoArriba: {x: 0, y: 0, z: 0}
-  extremoIzquirda: {x: 0, y: 0, z: 0}
+  extremoIzquierda: {x: 0, y: 0, z: 0}
   extremoDerecha: {x: 0, y: 0, z: 0}
   contenedorEnemigos: {fileID: 503590831}
-  contenedorDisparos: {fileID: 2127042926}
+  contenedorDisparos: {fileID: 7404572967278108278}
 --- !u!82 &82875581501878904
 AudioSource:
   m_ObjectHideFlags: 0

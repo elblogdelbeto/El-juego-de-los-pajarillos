@@ -24,8 +24,7 @@ public class ManejadorScenes : MonoBehaviour
         if (!string.IsNullOrEmpty(name))
         {
             int indiceSceneSiguiente = SceneManager.GetActiveScene().buildIndex + 1;
-            SceneManager.LoadScene(indiceSceneSiguiente); //anteriormente: Application.LoadLevel(nme);
-            Debug.Log("Carga de la siguiente Scene: " + SceneManager.GetSceneAt(indiceSceneSiguiente).name);
+            SceneManager.LoadScene(indiceSceneSiguiente); 
         }
     }
 

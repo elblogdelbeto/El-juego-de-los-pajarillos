@@ -11,7 +11,7 @@ public class NivelCampaniaManager : MonoBehaviour
     public Jugador jugador;
 
     [SerializeField]
-    static public int numNivel = 0;
+    static public int numNivel = 1;
 
     GameManager gameManager;
     Fondo fondo;
@@ -68,45 +68,43 @@ public class NivelCampaniaManager : MonoBehaviour
         Debug.Log("Cargar Nivel: NivelCampania_" + nivel);
 
         #region Ejemplo en codigo de la estructura de un nivel      
-            //NivelEstructura.EnemigoNivel level =
-            //     new NivelEstructura.EnemigoNivel()
-            //     {
-            //         identificadorEnemigo = "PajaroHuevo",
-            //         saludEnemigo = 100,
-            //         tiempoAparecer = 3f,
-            //         velocidad = 10f,
-            //         posicionAparecer = new Vector2(5, 0),
-            //         lugarAparecer = LugarAparecer.derecha,
-            //         dificultadEnemigo = DificultadEnemigo.normal,
-            //         inicioAleatorio = true,
-            //         reaparecer = false,
-            //         puntosEnemigo = 0
-            //     };
-            //List<NivelEstructura.EnemigoNivel> enemigosNivel = new List<NivelEstructura.EnemigoNivel>();
-            //enemigosNivel.Add(level);
-            //NivelEstructura nivelEstructura = new NivelEstructura()
-            //{
-            //    duracionTiempo = 60f,
-            //    fondo = "fondo01",
-            //    musica = "musica01",
-            //    velocidadFondo = 5f,
-            //    enemigosNivel = enemigosNivel,
-            //    porcentajePuntosMediaEstrella = 50,
-            //    porcentajePuntosEstrella = 100,
-            //    porcentajePunteriaMediaEstrella = 50,
-            //    porcentajePunteriaEstrella = 100,
-            //    porcentajeSaludMediaEstrella = 50,
-            //    porcentajeSaludEstrella = 100
-            //};
-            ////// serialize object to JSON
-            //string jsonString = JsonUtility.ToJson(nivelEstructura, true);
-            ////Debug.Log(jsonString);
+        NivelEstructura.EnemigoNivel level =
+             new NivelEstructura.EnemigoNivel()
+             {
+                 identificadorEnemigo = "PajaroHuevo",
+                 saludEnemigo = 100,
+                 tiempoAparecer = 3f,
+                 velocidad = 10f,
+                 posicionAparecer = new Vector2(5, 0),
+                 lugarAparecer = LugarAparecer.derecha,
+                 dificultadEnemigo = DificultadEnemigo.normal,
+                 inicioAleatorio = true,
+                 reaparecer = false,
+                 puntosEnemigo = 0
+             };
+        List<NivelEstructura.EnemigoNivel> enemigosNivel = new List<NivelEstructura.EnemigoNivel>();
+        enemigosNivel.Add(level);
+        NivelEstructura nivelEstructura = new NivelEstructura()
+        {
+            duracionTiempo = 60f,
+            fondo = "fondo01",
+            musica = "musica01",
+            velocidadFondo = 5f,
+            enemigosNivel = enemigosNivel,
+            porcentajePuntosMediaEstrella = 50,
+            porcentajePuntosEstrella = 100,
+            porcentajePunteriaMediaEstrella = 50,
+            porcentajePunteriaEstrella = 100,
+            porcentajeSaludMediaEstrella = 50,
+            porcentajeSaludEstrella = 100
+        };
+        // serialize object to JSON
+        string jsonString = JsonUtility.ToJson(nivelEstructura, true);      
         #endregion
 
         //USE TextAsset to load data
         TextAsset txtAsset = (TextAsset)Resources.Load("NivelCampania_" + nivel, typeof(TextAsset));
-        string tileFile = txtAsset.text;
-        Debug.Log(tileFile);
+        string tileFile = txtAsset.text;      
         return JsonUtility.FromJson<NivelEstructura>(tileFile);
     }
 

@@ -138,6 +138,7 @@ public class Jugador : MonoBehaviour
 
     private void Update()
     {
+        //TODO: arreglar que tiembla la posicion al entrar por segunda vez al nivel
         //posicion del jugador maxima 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xmin, xmax), Mathf.Clamp(transform.position.y, ymin, ymax));
 

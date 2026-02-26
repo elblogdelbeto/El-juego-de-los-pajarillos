@@ -27,7 +27,7 @@ public class TouchAndControls : MonoBehaviour
     Vector2 finVec = new Vector2();
     Touch touch;
     Vector2 pastPosition;
-    public GameObject botonItem { get; set; }
+    public GameObject botonItem;
     float anguloZ = 0;
     float anguloY = 0f;
     float ButtonCooler = 0.2f;
